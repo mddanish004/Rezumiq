@@ -17,6 +17,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN DJANGO_SECRET_KEY=build-only-dummy DATABASE_URL=postgres://build@localhost/build COMPILE_TIMEOUT_MS=600000 \
+    python manage.py warm_templates
+
 RUN DJANGO_SECRET_KEY=build-only-dummy DATABASE_URL=postgres://build@localhost/build \
     python manage.py collectstatic --noinput
 

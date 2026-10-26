@@ -51,6 +51,10 @@ jobs:
           "$HOME/.local/bin/tectonic" --version
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
       - run: pip install -r requirements-dev.txt
+      - name: Warm Tectonic cache
+        run: python manage.py warm_templates
+        env:
+          COMPILE_TIMEOUT_MS: "600000"
       - run: ruff check .
       - run: ruff format --check .
       - run: pytest
