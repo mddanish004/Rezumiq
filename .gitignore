@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.sqlite3
+
+# Node (the future frontend uses it)
+node_modules/
+
+# Django build output
+staticfiles/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Editors, agents and OS
+.DS_Store
+.idea/
+.vscode/
+.agents/
+.claude/
+.qoder/
+CLAUDE.local.md
+
+# Internal notes
+todo.md
+context.md
+server/storage/

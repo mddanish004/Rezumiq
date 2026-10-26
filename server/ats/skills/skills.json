@@ -1,0 +1,3335 @@
+[
+  {
+    "name": ".NET",
+    "aliases": [".NET Core", ".NET Framework", "DotNet", "Microsoft .NET Framework"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "A/B testing",
+    "aliases": ["A/B tests", "AB testing", "split testing"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  {
+    "name": "ABAP",
+    "aliases": [
+      "Advanced business application programming",
+      "Advanced business application programming ABAP",
+      "SAP ABAP"
+    ],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "ACCA", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "accept constructive criticism",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": [
+      "accept feedback",
+      "accepting constructive criticism",
+      "take constructive criticism",
+      "welcome constructive criticism"
+    ],
+    "source": ["esco"]
+  },
+  { "name": "Accountability", "aliases": ["accountable"], "kind": "soft", "category": "soft", "source": ["core"] },
+  {
+    "name": "Accounting",
+    "aliases": ["accountancy"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core", "onet"]
+  },
+  { "name": "Accounts payable", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Accounts receivable", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Active Directory",
+    "aliases": ["Microsoft Active Directory"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Active listening",
+    "aliases": ["listen actively", "listening skills"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Adaptability",
+    "aliases": ["adapt to change", "adaptable", "flexibility", "flexible"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Adobe Acrobat", "aliases": [], "kind": "hard", "category": "office", "source": ["core", "onet"] },
+  {
+    "name": "Adobe After Effects",
+    "aliases": ["After Effects"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet"]
+  },
+  { "name": "Adobe Analytics", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core", "onet"] },
+  {
+    "name": "Adobe Creative Suite",
+    "aliases": ["Adobe Creative Cloud", "Adobe Creative Cloud software", "Creative Cloud"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Adobe Illustrator",
+    "aliases": [
+      "Adobe Illustrator CC",
+      "Adobe Illustrator CS3",
+      "Adobe Illustrator CS4",
+      "Adobe Illustrator CS5",
+      "Adobe Illustrator CS6",
+      "Illustrator"
+    ],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Adobe InDesign",
+    "aliases": ["InDesign"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Adobe Lightroom",
+    "aliases": ["Adobe Photoshop Lightroom", "Lightroom", "Photoshop Lightroom"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Adobe Photoshop",
+    "aliases": [
+      "Adobe Photoshop CC",
+      "Adobe Photoshop CS3",
+      "Adobe Photoshop CS4",
+      "Adobe Photoshop CS5",
+      "Adobe Photoshop CS6",
+      "Adobe Photoshop Elements",
+      "Photoshop"
+    ],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Adobe Premiere Pro",
+    "aliases": ["Premiere Pro"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet"]
+  },
+  { "name": "Adobe XD", "aliases": ["XD"], "kind": "hard", "category": "design", "source": ["core", "onet"] },
+  { "name": "ADP Workforce Now", "kind": "hard", "category": "office", "aliases": [], "source": ["onet"] },
+  { "name": "Affiliate marketing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Agile",
+    "aliases": ["Agile development", "Agile methodologies", "Agile methodology"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Ahrefs",
+    "aliases": ["Ahrefs Site Explorer"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "AI agents",
+    "aliases": ["agentic AI", "LLM agents"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  { "name": "Airflow", "aliases": ["Apache Airflow"], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  { "name": "AJAX", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core", "onet", "esco"] },
+  { "name": "Algorithms", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core", "esco"] },
+  { "name": "Alteryx", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  {
+    "name": "Amazon SageMaker",
+    "aliases": ["Amazon Web Services AWS SageMaker", "AWS SageMaker", "SageMaker"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Ambiguity tolerance",
+    "aliases": ["ambiguity", "comfortable with ambiguity", "deal with ambiguity", "navigate ambiguity"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "AML",
+    "aliases": ["AML compliance", "anti money laundering", "anti-money laundering"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  { "name": "Amplitude", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Analytical skills",
+    "aliases": ["analytical", "analytical mindset", "analytical thinking"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Android",
+    "aliases": ["Android development", "Android SDK", "Google Android"],
+    "kind": "hard",
+    "category": "mobile",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Android Studio", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  {
+    "name": "Angular",
+    "aliases": ["Angular 2", "Google Angular"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core", "onet"]
+  },
+  { "name": "AngularJS", "aliases": ["Angular.js"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "Ansible", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "onet", "esco"] },
+  {
+    "name": "Apache Spark",
+    "aliases": ["Spark", "Spark SQL"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet", "esco"],
+    "cased": ["Spark"]
+  },
+  {
+    "name": "Apache Tomcat",
+    "aliases": ["Tomcat"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Apex", "aliases": ["Salesforce Apex"], "kind": "hard", "category": "language", "source": ["core"] },
+  { "name": "API design", "aliases": ["API development"], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "API Gateway", "aliases": ["AWS API Gateway"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "API testing", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"] },
+  { "name": "Appium", "aliases": [], "kind": "hard", "category": "testing", "source": ["core", "onet"] },
+  { "name": "Argo CD", "aliases": ["ArgoCD"], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "Artificial intelligence", "aliases": ["AI"], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Asana", "aliases": [], "kind": "hard", "category": "product", "source": ["core", "onet"] },
+  {
+    "name": "ASP.NET",
+    "aliases": [
+      "ASP.NET 2.0",
+      "ASP.NET 3.5",
+      "ASP.NET Core",
+      "ASP.NET Core MVC",
+      "ASP.NET MVC",
+      "Microsoft ASP.NET",
+      "Microsoft ASP.NET Core",
+      "Microsoft ASP.NET Core MVC",
+      "MVC"
+    ],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Assembly language",
+    "aliases": ["ARM assembly", "x86 assembly"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core"]
+  },
+  { "name": "Asset management", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Attention to detail",
+    "aliases": ["attention to details", "detail-oriented", "eye for detail", "meticulous"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Autodesk 3ds Max", "kind": "hard", "category": "design", "aliases": ["3ds Max"], "source": ["onet"] },
+  {
+    "name": "AWS",
+    "aliases": ["Amazon Web Services", "Amazon Web Services AWS", "Web Services", "Web Services AWS"],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "AWS CloudFormation",
+    "aliases": ["Amazon Web Services AWS CloudFormation", "CloudFormation"],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core", "onet"]
+  },
+  { "name": "AWS IAM", "aliases": ["IAM"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  {
+    "name": "AWS Lambda",
+    "aliases": ["Lambda"],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core"],
+    "cased": ["Lambda"]
+  },
+  { "name": "AWS RDS", "aliases": ["Amazon RDS"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "Azure", "aliases": ["Microsoft Azure"], "kind": "hard", "category": "cloud", "source": ["core", "onet"] },
+  {
+    "name": "Azure Data Factory",
+    "aliases": ["ADF", "Microsoft Azure Data Factory"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Azure DevOps",
+    "aliases": ["Azure DevOps Services", "Microsoft Azure DevOps Services"],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core", "onet"]
+  },
+  { "name": "Azure Functions", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "B2B sales", "aliases": ["B2B marketing"], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Babel", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "Backbone.js", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core", "onet"] },
+  {
+    "name": "Banking operations",
+    "aliases": ["bank operations"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  {
+    "name": "Basel III",
+    "aliases": ["Basel", "Basel norms"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  {
+    "name": "Bash",
+    "aliases": ["Bash scripting", "Shell", "Shell script", "Shell scripting", "UNIX Shell"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"],
+    "cased": ["Shell"]
+  },
+  { "name": "Benchmarking", "aliases": [], "kind": "hard", "category": "consulting", "source": ["core"] },
+  { "name": "Big data", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "BigQuery", "aliases": ["Google BigQuery"], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Bing Ads", "kind": "hard", "category": "marketing", "aliases": [], "source": ["onet"] },
+  {
+    "name": "Bitbucket",
+    "aliases": ["Atlassian Bitbucket"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  { "name": "Blackbaud The Raiser's Edge", "kind": "hard", "category": "marketing", "aliases": [], "source": ["onet"] },
+  { "name": "Blender", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  { "name": "Bloomberg Terminal", "aliases": ["Bloomberg"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Bookkeeping", "aliases": ["book keeping"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Bootstrap", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core", "onet"] },
+  {
+    "name": "Border Gateway Protocol",
+    "kind": "hard",
+    "category": "devops",
+    "aliases": ["BGP", "Border Gateway Protocol BGP"],
+    "source": ["onet"]
+  },
+  { "name": "Brand management", "aliases": ["branding"], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Brand strategy", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Budgeting", "aliases": ["budget planning"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Bun", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"], "cased": ["Bun"] },
+  {
+    "name": "Burp Suite",
+    "aliases": ["Portswigger BurP Suite"],
+    "kind": "hard",
+    "category": "security",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Business acumen",
+    "aliases": ["business sense", "commercial acumen", "commercial awareness"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Business analysis", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  {
+    "name": "Business case development",
+    "aliases": ["business case", "business cases"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "Business development", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Business intelligence", "aliases": ["BI"], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Business process re-engineering",
+    "aliases": ["BPR", "business process reengineering"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  {
+    "name": "Business strategy",
+    "aliases": ["corporate strategy", "strategic planning"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  {
+    "name": "C",
+    "aliases": ["ANSI C", "C language", "C programming"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"],
+    "ambiguous": true
+  },
+  {
+    "name": "C#",
+    "aliases": ["C Sharp", "CSharp"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "C++",
+    "aliases": ["C plus plus", "CPP", "Modern C++"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Caching", "aliases": ["cache"], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Campaign management",
+    "aliases": ["campaign planning"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "Canva", "aliases": [], "kind": "hard", "category": "design", "source": ["core", "onet"] },
+  {
+    "name": "Capital IQ",
+    "aliases": ["CapIQ", "S&P Capital IQ"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Capital markets", "aliases": ["DCM", "ECM"], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Cash flow management",
+    "aliases": ["cash flow analysis", "cash flow forecasting"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Cassandra",
+    "aliases": ["Apache Cassandra"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet"]
+  },
+  { "name": "Celery", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "CFA",
+    "aliases": ["CFA Level 1", "CFA Level I", "Chartered Financial Analyst"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Chakra UI", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "Change management", "aliases": [], "kind": "hard", "category": "consulting", "source": ["core"] },
+  {
+    "name": "Chartered Accountancy",
+    "aliases": ["CA Final", "CA Inter", "CA Intermediate", "Chartered Accountant"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Chef",
+    "aliases": [],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet", "esco"],
+    "cased": ["Chef"]
+  },
+  {
+    "name": "CI/CD",
+    "aliases": ["CICD", "continuous delivery", "continuous deployment", "continuous integration"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core"]
+  },
+  { "name": "CircleCI", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "ClickHouse", "aliases": [], "kind": "hard", "category": "database", "source": ["core"] },
+  {
+    "name": "Client handling",
+    "aliases": ["client facing", "client-facing", "customer facing", "customer-facing"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Client management",
+    "aliases": ["client servicing"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "Clojure", "aliases": [], "kind": "hard", "category": "language", "source": ["core"] },
+  { "name": "Cloud computing", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "Cloudflare", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "CloudWatch", "aliases": ["Amazon CloudWatch"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  {
+    "name": "CNN",
+    "aliases": ["CNNs", "convolutional neural networks"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  {
+    "name": "COBOL",
+    "aliases": ["Common business oriented language", "Common business oriented language COBOL"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "CockroachDB", "aliases": [], "kind": "hard", "category": "database", "source": ["core"] },
+  {
+    "name": "Collaboration",
+    "aliases": ["collaborate", "collaborative", "cross-functional collaboration", "cross-functional teams"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Communication",
+    "aliases": [
+      "communicate effectively",
+      "communication skills",
+      "excellent communication",
+      "oral communication",
+      "verbal communication",
+      "written communication"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Comparable company analysis",
+    "aliases": ["comparable companies", "comps", "comps analysis", "trading comps"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Competitive analysis",
+    "aliases": ["competitive landscape", "competitor analysis"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  { "name": "Competitive programming", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  { "name": "Computer architecture", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  { "name": "Computer networks", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  { "name": "Computer vision", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "Conflict resolution",
+    "aliases": ["conflict management", "manage conflict", "resolve conflicts"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Confluence",
+    "aliases": ["Atlassian Confluence"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Consumer insights",
+    "aliases": ["consumer behavior", "consumer behaviour"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  {
+    "name": "Content management systems",
+    "kind": "hard",
+    "category": "marketing",
+    "aliases": [
+      "CMS",
+      "Content management systems CMS",
+      "Web content management system",
+      "Web content management system CMS"
+    ],
+    "source": ["onet"]
+  },
+  { "name": "Content marketing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Content strategy", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Content writing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Conversion rate optimization",
+    "aliases": ["conversion optimization", "CRO"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "Copywriting", "aliases": ["copy writing"], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Core banking",
+    "aliases": ["CBS", "core banking systems"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  { "name": "Corporate banking", "aliases": [], "kind": "hard", "category": "banking", "source": ["core"] },
+  { "name": "Corporate finance", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Cost accounting",
+    "aliases": ["cost analysis"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Cost optimization",
+    "aliases": ["cost reduction"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "CPA", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Creativity",
+    "aliases": ["creative", "creative thinking", "think creatively", "thinking creatively"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Credit analysis",
+    "aliases": ["credit appraisal", "credit assessment"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Credit cards", "aliases": ["cards domain"], "kind": "hard", "category": "banking", "source": ["core"] },
+  {
+    "name": "Credit risk",
+    "aliases": ["credit risk analysis", "credit risk management"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Credit underwriting",
+    "aliases": ["loan underwriting", "underwriting"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  {
+    "name": "Critical thinking",
+    "aliases": ["critical thinker", "think critically"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "CRM",
+    "aliases": ["customer relationship management", "Customer relationship management CRM"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Cross-selling",
+    "aliases": ["cross selling", "upselling"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  {
+    "name": "Cryptography",
+    "aliases": ["encryption"],
+    "kind": "hard",
+    "category": "security",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "CSS",
+    "aliases": ["Cascading Style Sheets", "Cascading style sheets CSS", "CSS3"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Cucumber",
+    "aliases": ["BDD", "behavior-driven development", "behaviour-driven development"],
+    "kind": "hard",
+    "category": "testing",
+    "source": ["core"]
+  },
+  {
+    "name": "Curiosity",
+    "aliases": ["curious", "intellectual curiosity", "intellectually curious"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Customer acquisition",
+    "aliases": ["user acquisition"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  {
+    "name": "Customer focus",
+    "aliases": [
+      "client focus",
+      "customer centricity",
+      "customer obsession",
+      "customer orientation",
+      "customer-centric"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Customer journey mapping",
+    "aliases": ["journey mapping", "user journey mapping"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  {
+    "name": "Customer segmentation",
+    "aliases": ["market segmentation", "segmentation"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  {
+    "name": "Cybersecurity",
+    "aliases": ["cyber security", "information security", "InfoSec"],
+    "kind": "hard",
+    "category": "security",
+    "source": ["core"]
+  },
+  { "name": "Cypress", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"] },
+  { "name": "D3.js", "aliases": ["D3"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "Dart", "aliases": [], "kind": "hard", "category": "language", "source": ["core"], "cased": ["Dart"] },
+  {
+    "name": "Data analysis",
+    "aliases": ["data analyst skills", "data analytics"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  {
+    "name": "Data cleaning",
+    "aliases": ["data cleansing", "data wrangling"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  { "name": "Data engineering", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Data governance", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Data mining", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "esco"] },
+  {
+    "name": "Data modeling",
+    "aliases": ["data modelling", "dimensional modeling", "star schema"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  { "name": "Data pipelines", "aliases": ["data pipeline"], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Data science", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "Data structures",
+    "aliases": ["Data Structures and Algorithms", "DS and Algo", "DS&A", "DSA"],
+    "kind": "hard",
+    "category": "fundamentals",
+    "source": ["core"]
+  },
+  {
+    "name": "Data visualization",
+    "aliases": ["data visualisation"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Data warehousing",
+    "aliases": ["data warehouse", "data warehouses"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Database design",
+    "aliases": ["database modeling", "database modelling", "schema design"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core"]
+  },
+  { "name": "Databricks", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Datadog", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "DaVinci Resolve", "aliases": [], "kind": "hard", "category": "design", "source": ["core", "onet"] },
+  { "name": "DAX", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "DBMS",
+    "aliases": ["database management systems"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "esco"]
+  },
+  { "name": "dbt", "aliases": ["data build tool"], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "DCF",
+    "aliases": ["DCF modeling", "DCF valuation", "discounted cash flow"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Decision making",
+    "aliases": [
+      "decision-making",
+      "make choices",
+      "make decision",
+      "make decisions",
+      "making decisions",
+      "take decisions"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  { "name": "Deep learning", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Deno", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Derivatives", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Design patterns", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  { "name": "Design systems", "aliases": ["design system"], "kind": "hard", "category": "design", "source": ["core"] },
+  { "name": "Design thinking", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  { "name": "DevOps", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "esco"] },
+  { "name": "Digital marketing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Digital transformation", "aliases": [], "kind": "hard", "category": "consulting", "source": ["core"] },
+  { "name": "DigitalOcean", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "Discrete mathematics", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  { "name": "Distributed systems", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Django",
+    "aliases": ["Django REST Framework", "DRF"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "DNS",
+    "aliases": ["Domain name system", "Domain name system DNS"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  { "name": "Docker", "aliases": ["Docker Compose"], "kind": "hard", "category": "devops", "source": ["core", "onet"] },
+  { "name": "Drizzle ORM", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Drupal",
+    "kind": "hard",
+    "category": "frontend",
+    "cased": ["Drupal"],
+    "aliases": [],
+    "source": ["onet", "esco"]
+  },
+  {
+    "name": "Due diligence",
+    "aliases": ["DD", "financial due diligence"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Dynamic programming", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  {
+    "name": "DynamoDB",
+    "aliases": ["Amazon DynamoDB"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet"]
+  },
+  { "name": "E-commerce", "aliases": ["ecommerce"], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "EC2",
+    "aliases": [
+      "Amazon EC2",
+      "Amazon Elastic Compute Cloud",
+      "Amazon Elastic Compute Cloud EC2",
+      "Elastic Compute Cloud",
+      "Elastic Compute Cloud EC2"
+    ],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Eclipse IDE",
+    "aliases": ["Eclipse", "IDE", "Integrated development environment", "Integrated development environment IDE"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet", "esco"],
+    "cased": ["Eclipse"]
+  },
+  { "name": "ECS", "aliases": ["Amazon ECS"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "EKS", "aliases": ["Amazon EKS"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  {
+    "name": "Elasticsearch",
+    "aliases": ["Elastic Search", "OpenSearch"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet"]
+  },
+  { "name": "Elixir", "aliases": [], "kind": "hard", "category": "language", "source": ["core"] },
+  {
+    "name": "ELK Stack",
+    "aliases": ["ELK", "Kibana", "Logstash"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core"]
+  },
+  { "name": "Email marketing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Embedded C", "aliases": [], "kind": "hard", "category": "language", "source": ["core"] },
+  {
+    "name": "Embeddings",
+    "aliases": ["semantic search", "vector search"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  { "name": "Ember.js", "aliases": ["EmberJS"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "Emotional intelligence",
+    "aliases": ["empathetic", "empathy", "show empathy"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "End-to-end testing",
+    "aliases": ["E2E testing", "e2e tests"],
+    "kind": "hard",
+    "category": "testing",
+    "source": ["core"]
+  },
+  {
+    "name": "Enterprise application integration",
+    "kind": "hard",
+    "category": "backend",
+    "aliases": ["EAI", "Enterprise application integration EAI"],
+    "source": ["onet"]
+  },
+  {
+    "name": "Equities",
+    "aliases": ["equity markets", "stock markets"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Equity research", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Erlang", "aliases": [], "kind": "hard", "category": "language", "source": ["core", "esco"] },
+  { "name": "Ethical hacking", "aliases": [], "kind": "hard", "category": "security", "source": ["core"] },
+  { "name": "ETL", "aliases": ["ELT", "ETL pipelines"], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "evaluate information",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": [
+      "assess information",
+      "evaluate facts",
+      "evaluate important information",
+      "evaluate info",
+      "evaluate opinions",
+      "evaluate truth",
+      "evaluating information",
+      "review information",
+      "verify information",
+      "weigh information"
+    ],
+    "source": ["esco"]
+  },
+  {
+    "name": "Event management",
+    "aliases": ["event marketing"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  {
+    "name": "Event-driven architecture",
+    "aliases": ["EDA", "event driven architecture"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  {
+    "name": "Excel",
+    "aliases": ["Advanced Excel", "Excel modeling", "Excel modelling", "Microsoft Excel", "MS Excel", "MS-Excel"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"],
+    "ambiguous": true
+  },
+  {
+    "name": "Executive presentations",
+    "aliases": ["executive communication"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  {
+    "name": "Exploratory data analysis",
+    "aliases": ["EDA analysis"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  { "name": "Expo", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  {
+    "name": "Express.js",
+    "aliases": ["Express", "Express JS", "ExpressJS"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"],
+    "cased": ["Express"]
+  },
+  { "name": "F#", "aliases": [], "kind": "hard", "category": "language", "source": ["core"] },
+  { "name": "FactSet", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "FastAPI", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Feature engineering", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Figma", "aliases": [], "kind": "hard", "category": "design", "source": ["core", "onet"] },
+  { "name": "Finacle", "aliases": ["Infosys Finacle"], "kind": "hard", "category": "banking", "source": ["core"] },
+  {
+    "name": "Final Cut Pro",
+    "aliases": ["Apple Final Cut Pro"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet"]
+  },
+  { "name": "Financial analysis", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Financial markets", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Financial modeling",
+    "aliases": ["financial model", "financial modelling", "financial models"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Financial reporting", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Financial statement analysis",
+    "aliases": ["3-statement model", "financial statements", "three-statement model"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Fine-tuning",
+    "aliases": ["fine tuning", "LoRA", "PEFT"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  { "name": "Firebase", "aliases": ["Google Firebase"], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Firestore", "aliases": ["Cloud Firestore"], "kind": "hard", "category": "database", "source": ["core"] },
+  { "name": "Firewalls", "aliases": ["firewall"], "kind": "hard", "category": "security", "source": ["core", "onet"] },
+  { "name": "Fixed income", "aliases": ["bonds"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Flask", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Flink", "aliases": ["Apache Flink"], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Flutter", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  {
+    "name": "Forecasting",
+    "aliases": ["financial forecasting"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Fortran",
+    "aliases": ["Formula translation/translator", "Formula translation/translator FORTRAN"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "FP&A",
+    "aliases": ["financial planning and analysis", "FP and A"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Framer", "aliases": [], "kind": "hard", "category": "design", "source": ["core"], "cased": ["Framer"] },
+  { "name": "Framer Motion", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "Fraud detection",
+    "aliases": ["fraud analytics", "fraud prevention"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  { "name": "FRM", "aliases": ["Financial Risk Manager"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "GAAP", "aliases": ["US GAAP"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Gatsby", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "General ledger", "aliases": ["GL accounting"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Generative AI", "aliases": ["Gen AI", "GenAI"], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Git", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "onet"] },
+  { "name": "GitHub", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "onet"] },
+  { "name": "GitHub Actions", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "GitLab", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "onet"] },
+  { "name": "GitLab CI", "aliases": ["GitLab CI/CD"], "kind": "hard", "category": "devops", "source": ["core"] },
+  {
+    "name": "give advice to others",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": ["give advice", "give constructive feedback", "giving advice to others"],
+    "source": ["esco"]
+  },
+  {
+    "name": "Go",
+    "aliases": ["Go lang", "Go language", "Go programming", "Golang"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"],
+    "ambiguous": true
+  },
+  {
+    "name": "Go-to-market",
+    "aliases": ["go to market", "go to market strategy", "go-to-market strategy", "GTM"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  {
+    "name": "Google Ads",
+    "aliases": ["AdWords", "Google AdWords"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Google Analytics",
+    "aliases": ["GA4", "Google Analytics 4"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Google Cloud",
+    "aliases": ["GCP", "Google Cloud Platform"],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core", "onet"]
+  },
+  { "name": "Google Colab", "aliases": ["Colab"], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Google Docs", "aliases": [], "kind": "hard", "category": "office", "source": ["core", "onet"] },
+  { "name": "Google Kubernetes Engine", "aliases": ["GKE"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "Google Search Console", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Google Sheets", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  { "name": "Google Slides", "aliases": [], "kind": "hard", "category": "office", "source": ["core", "onet"] },
+  {
+    "name": "Google Tag Manager",
+    "aliases": ["Tag Manager"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Google Workspace",
+    "aliases": ["G Suite", "Google Workspace software", "GSuite"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  { "name": "Gradle", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Grafana", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  {
+    "name": "Grafana Labs Grafana Cloud",
+    "kind": "hard",
+    "category": "design",
+    "aliases": ["Grafana Cloud"],
+    "source": ["onet"]
+  },
+  { "name": "Graphic design", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  { "name": "GraphQL", "aliases": [], "kind": "hard", "category": "backend", "source": ["core", "onet"] },
+  {
+    "name": "Groovy",
+    "aliases": ["Apache Groovy"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Growth marketing",
+    "aliases": ["growth hacking"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "gRPC", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "GSAP", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "GST",
+    "aliases": ["Goods and Services Tax", "GST compliance", "GST filing", "GST returns"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Guidance Software EnCase Enterprise",
+    "kind": "hard",
+    "category": "data",
+    "aliases": [],
+    "source": ["onet"]
+  },
+  {
+    "name": "Hadoop",
+    "aliases": ["Apache Hadoop", "HDFS", "MapReduce"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Haskell", "aliases": [], "kind": "hard", "category": "language", "source": ["core", "esco"] },
+  { "name": "Helm", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "Heroku", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  {
+    "name": "Hibernate",
+    "aliases": ["Hibernate ORM", "JPA", "ORM"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  { "name": "High-level design", "aliases": ["HLD"], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Hive",
+    "aliases": ["Apache Hive"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet"],
+    "cased": ["Hive"]
+  },
+  { "name": "Hootsuite", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "HTML",
+    "aliases": ["HTML5", "Hypertext Markup Language", "Hypertext markup language HTML"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core", "onet"]
+  },
+  { "name": "HTMX", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "HTTP", "aliases": ["HTTP/2", "HTTPS"], "kind": "hard", "category": "devops", "source": ["core"] },
+  {
+    "name": "HubSpot",
+    "aliases": ["HubSpot CRM", "HubSpot software"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Hugging Face",
+    "aliases": ["Hugging Face Transformers", "HuggingFace"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  { "name": "Hypothesis testing", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Hypothesis-driven problem solving",
+    "aliases": ["hypothesis driven", "issue trees", "MECE"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "IBM Cloud", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  {
+    "name": "IBM Db2",
+    "aliases": [
+      "AIX",
+      "DB2",
+      "DB2 Connect",
+      "DB2 database",
+      "DB2 for i",
+      "DB2 for Linux, UNIX and Windows",
+      "DB2 for z/OS",
+      "DB2 on Cloud",
+      "IBM",
+      "IBM AIX",
+      "IBM DB2 database"
+    ],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "IBM WebSphere",
+    "kind": "hard",
+    "category": "devops",
+    "aliases": ["IBM WebSphere MQ", "MQ", "WebSphere", "WebSphere MQ"],
+    "source": ["onet", "esco"]
+  },
+  {
+    "name": "identify opportunities",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": [
+      "identify opportunity",
+      "identifying opportunities",
+      "locate opportunities",
+      "pinpoint opportunities",
+      "recognise business opportunities",
+      "recognise opportunities",
+      "spot opportunities"
+    ],
+    "source": ["esco"]
+  },
+  { "name": "IFRS", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Income tax",
+    "aliases": ["income tax returns", "ITR filing"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Ind AS", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Independent work",
+    "aliases": ["autonomous", "autonomy", "independently", "work independently"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Influencer marketing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Informatica",
+    "aliases": ["Informatica PowerCenter"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Information architecture",
+    "aliases": [],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "esco"]
+  },
+  { "name": "Infrastructure as Code", "aliases": ["IaC"], "kind": "hard", "category": "devops", "source": ["core"] },
+  {
+    "name": "Initiative",
+    "aliases": ["proactive", "self starter", "self-starter", "take initiative", "take the initiative"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Insurance", "aliases": ["insurance products"], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Integration testing",
+    "aliases": ["integration tests"],
+    "kind": "hard",
+    "category": "testing",
+    "source": ["core"]
+  },
+  { "name": "Integrity", "aliases": ["ethical", "honesty"], "kind": "soft", "category": "soft", "source": ["core"] },
+  { "name": "IntelliJ IDEA", "aliases": ["IntelliJ"], "kind": "hard", "category": "office", "source": ["core"] },
+  { "name": "Interaction design", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  {
+    "name": "Intercultural competence",
+    "aliases": [
+      "cross-cultural communication",
+      "cultural awareness",
+      "demonstrate cross-cultural competence",
+      "demonstrate intercultural competence",
+      "display intercultural competence",
+      "exhibit intercultural competence",
+      "show cultural competence",
+      "show intercultural competence"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Internal audit",
+    "aliases": ["internal auditing"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Internet of Things",
+    "aliases": ["IoT"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Interpersonal skills",
+    "aliases": [
+      "interact with clients",
+      "interact with colleagues",
+      "interact with customers",
+      "interact with others",
+      "interpersonal",
+      "people skills"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  { "name": "Intuit TurboTax", "kind": "hard", "category": "finance", "aliases": ["TurboTax"], "source": ["onet"] },
+  {
+    "name": "Investment analysis",
+    "aliases": ["investment research"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Investment banking", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "InVision",
+    "aliases": ["InVision software"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core", "onet"]
+  },
+  { "name": "Ionic", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  {
+    "name": "iOS",
+    "aliases": ["Apple iOS", "Cisco IOS", "iOS development"],
+    "kind": "hard",
+    "category": "mobile",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "ISO 27001", "aliases": [], "kind": "hard", "category": "security", "source": ["core"] },
+  { "name": "Istio", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  {
+    "name": "Java",
+    "aliases": ["Core Java", "Java 17", "Java 8", "Java Posse", "Oracle Java"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Java EE",
+    "aliases": [
+      "J2EE",
+      "Jakarta EE",
+      "Java 2 Platform Enterprise Edition",
+      "Java 2 Platform Enterprise Edition J2EE",
+      "Oracle Java 2 Platform Enterprise Edition",
+      "Oracle Java 2 Platform Enterprise Edition J2EE"
+    ],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "JavaScript",
+    "aliases": [
+      "Client-side JavaScript",
+      "ECMAScript",
+      "ES6",
+      "Ext JS",
+      "JavaScript 1.6",
+      "JavaScript 1.7",
+      "JS",
+      "Server-side JavaScript",
+      "Vanilla JS"
+    ],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "JavaScript framework", "kind": "hard", "category": "frontend", "aliases": [], "source": ["onet", "esco"] },
+  { "name": "JDBC", "aliases": ["Oracle JDBC"], "kind": "hard", "category": "backend", "source": ["core", "onet"] },
+  {
+    "name": "Jenkins",
+    "aliases": ["CI", "Jenkins CI", "Jenkins Continuous Integration server"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Jest", "aliases": [], "kind": "hard", "category": "testing", "source": ["core", "onet"] },
+  { "name": "Jetpack Compose", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  {
+    "name": "Jira",
+    "aliases": ["Atlassian Jira", "Atlassian JIRA", "JIRA"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core", "onet"]
+  },
+  { "name": "JMeter", "aliases": ["Apache JMeter"], "kind": "hard", "category": "testing", "source": ["core", "onet"] },
+  { "name": "jQuery", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core", "onet"] },
+  {
+    "name": "JSON",
+    "aliases": ["JavaScript Object Notation", "JavaScript Object Notation JSON"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  { "name": "Julia", "aliases": [], "kind": "hard", "category": "language", "source": ["core"], "cased": ["Julia"] },
+  { "name": "JUnit", "aliases": [], "kind": "hard", "category": "testing", "source": ["core", "onet"] },
+  {
+    "name": "Jupyter",
+    "aliases": ["Jupyter Notebook", "Jupyter Notebooks", "JupyterLab"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "JWT",
+    "aliases": ["JSON Web Token", "JSON Web Tokens"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  { "name": "Kafka", "aliases": ["Apache Kafka"], "kind": "hard", "category": "backend", "source": ["core", "onet"] },
+  { "name": "Kali Linux", "aliases": [], "kind": "hard", "category": "security", "source": ["core", "onet", "esco"] },
+  { "name": "Kanban", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "Keras", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "Key account management",
+    "aliases": ["account management", "KAM"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "Kotlin", "aliases": [], "kind": "hard", "category": "language", "source": ["core"] },
+  { "name": "Kotlin Multiplatform", "aliases": ["KMP"], "kind": "hard", "category": "mobile", "source": ["core"] },
+  {
+    "name": "KPIs",
+    "aliases": ["key performance indicators", "KPI"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  { "name": "Kronos Workforce Timekeeper", "kind": "hard", "category": "finance", "aliases": [], "source": ["onet"] },
+  { "name": "Kubeflow", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Kubernetes", "aliases": ["K8s"], "kind": "hard", "category": "devops", "source": ["core", "onet"] },
+  {
+    "name": "KYC",
+    "aliases": ["Know Your Customer", "KYC compliance"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  { "name": "LAMP stack", "aliases": [], "kind": "hard", "category": "backend", "source": ["core", "onet"] },
+  { "name": "LangChain", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "LangGraph", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Laravel", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "LaTeX", "aliases": ["Overleaf"], "kind": "hard", "category": "office", "source": ["core"] },
+  {
+    "name": "LBO",
+    "aliases": ["LBO modeling", "leveraged buyout"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "LDAP",
+    "aliases": ["LDAP 2", "LDAP 3"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "esco"]
+  },
+  { "name": "Lead generation", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Leadership",
+    "aliases": ["lead others", "leadership skills", "leading teams", "team leadership"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Lean",
+    "aliases": ["Lean manufacturing", "Lean methodology", "Lean principles"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "LightGBM", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Linear algebra", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  {
+    "name": "Linux",
+    "aliases": ["CentOS", "Enterprise Linux", "Red Hat Enterprise Linux", "RHEL", "Ubuntu"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Linux administration",
+    "aliases": ["sysadmin", "system administration"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core"]
+  },
+  { "name": "LlamaIndex", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "LLMs",
+    "aliases": ["large language model", "Large Language Models", "LLM"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  {
+    "name": "Load balancing",
+    "aliases": ["load balancer", "load balancers"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core"]
+  },
+  {
+    "name": "Load testing",
+    "aliases": ["performance testing", "stress testing"],
+    "kind": "hard",
+    "category": "testing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Loan processing",
+    "aliases": ["loan origination"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  { "name": "Looker", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Looker Studio",
+    "aliases": ["Google Data Studio"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  { "name": "Low-level design", "aliases": ["LLD"], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Low-level virtual machine LLVM compilers",
+    "kind": "hard",
+    "category": "backend",
+    "aliases": [],
+    "source": ["onet"]
+  },
+  { "name": "Lua", "aliases": [], "kind": "hard", "category": "language", "source": ["core"], "cased": ["Lua"] },
+  {
+    "name": "M&A",
+    "aliases": ["M&A advisory", "mergers & acquisitions", "mergers and acquisitions"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Machine learning", "aliases": ["ML"], "kind": "hard", "category": "ai-ml", "source": ["core", "esco"] },
+  { "name": "Magellan Firmware", "kind": "hard", "category": "devops", "aliases": [], "source": ["onet"] },
+  { "name": "Mailchimp", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Management consulting", "aliases": [], "kind": "hard", "category": "consulting", "source": ["core"] },
+  { "name": "Manual testing", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"] },
+  { "name": "MariaDB", "aliases": [], "kind": "hard", "category": "database", "source": ["core"] },
+  { "name": "Markdown", "aliases": [], "kind": "hard", "category": "office", "source": ["core"] },
+  { "name": "Market analysis", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Market entry strategy",
+    "aliases": ["market entry"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "Market research", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "Market risk", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Market sizing", "aliases": [], "kind": "hard", "category": "consulting", "source": ["core"] },
+  { "name": "Marketing analytics", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Marketing automation", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Marketing funnels",
+    "aliases": ["funnel analysis", "sales funnel"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "Marketing strategy", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Marketo",
+    "aliases": ["Marketo Marketing Automation"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  { "name": "Material UI", "aliases": ["MUI"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "MathWorks Simulink", "kind": "hard", "category": "data", "aliases": [], "source": ["onet"] },
+  {
+    "name": "MATLAB",
+    "aliases": ["The MathWorks", "The MathWorks MATLAB"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Matplotlib", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Maven",
+    "aliases": ["Apache Maven"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Maxon Cinema 4D", "kind": "hard", "category": "design", "aliases": ["Cinema 4D"], "source": ["onet"] },
+  { "name": "MEAN", "aliases": ["MEAN stack"], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Memcached", "aliases": [], "kind": "hard", "category": "database", "source": ["core"] },
+  {
+    "name": "memorise information",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": [
+      "commit information to memory",
+      "learn information by heart",
+      "memorise facts",
+      "memorise info",
+      "memorise procedures",
+      "memorising information",
+      "memorize information",
+      "remember information"
+    ],
+    "source": ["esco"]
+  },
+  {
+    "name": "Mentoring",
+    "aliases": ["coaching", "instruct colleagues", "instruct others", "mentor junior", "mentor others", "mentorship"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  { "name": "MERN", "aliases": ["MERN stack"], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Message queues",
+    "aliases": ["message brokers", "message queue"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  {
+    "name": "Meta Ads",
+    "aliases": ["Facebook Ads", "Facebook Ads Manager", "Instagram Ads", "Meta Ads Manager"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "Metabase", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Metasploit", "aliases": [], "kind": "hard", "category": "security", "source": ["core", "onet", "esco"] },
+  {
+    "name": "Micro frontends",
+    "aliases": ["microfrontends"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core"]
+  },
+  {
+    "name": "Microservices",
+    "aliases": ["microservice", "microservices architecture"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Microsoft Access",
+    "aliases": ["MS Access"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Microsoft Active Server Pages",
+    "kind": "hard",
+    "category": "frontend",
+    "aliases": ["Active Server Pages", "Active Server Pages ASP", "ASP", "Microsoft Active Server Pages ASP"],
+    "source": ["onet"]
+  },
+  {
+    "name": "Microsoft Dynamics",
+    "aliases": ["Dynamics 365", "Dynamics GP", "GP", "Microsoft Dynamics 365", "Microsoft Dynamics GP"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  { "name": "Microsoft Fabric", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Microsoft Internet Information Services",
+    "kind": "hard",
+    "category": "backend",
+    "aliases": ["Internet Information Services"],
+    "source": ["onet"]
+  },
+  {
+    "name": "Microsoft Office",
+    "aliases": ["Microsoft 365", "Microsoft Office software", "MS Office", "MS Office Suite", "Office 365"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Microsoft Project",
+    "aliases": ["MS Project"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Microsoft SQL Server",
+    "aliases": [
+      "Microsoft SQL Server Compact",
+      "MS SQL",
+      "MS SQL Server",
+      "MSSQL",
+      "SQL Server",
+      "SQL Server 2005",
+      "SQL Server 2008",
+      "SQL Server 2012",
+      "SQL Server 2014",
+      "SQL Server Developer Edition",
+      "SQL Server Enterprise Edition",
+      "SQL Server Express Edition",
+      "SQL Server Standard Edition",
+      "SQL Server Web Edition",
+      "SQL Server Workgroup Edition"
+    ],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Microsoft Team Foundation Server",
+    "kind": "hard",
+    "category": "product",
+    "aliases": ["Team Foundation Server"],
+    "source": ["onet"]
+  },
+  {
+    "name": "Microsoft Teams",
+    "aliases": ["MS Teams"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Microsoft Visio",
+    "aliases": ["Visio"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Microsoft Word",
+    "aliases": ["MS Word", "MS-Word"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  { "name": "Miro", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  {
+    "name": "MIS reporting",
+    "aliases": ["Management information systems", "Management information systems MIS", "MIS", "MIS reports"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core", "onet"]
+  },
+  { "name": "MITRE ATT&CK", "kind": "hard", "category": "testing", "aliases": [], "source": ["onet"] },
+  { "name": "Mixpanel", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "MLflow", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "MLOps", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Mocha", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"], "cased": ["Mocha"] },
+  { "name": "Model deployment", "aliases": ["model serving"], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "MongoDB", "aliases": ["Mongo"], "kind": "hard", "category": "database", "source": ["core", "onet"] },
+  { "name": "Mongoose", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Motion design", "aliases": ["motion graphics"], "kind": "hard", "category": "design", "source": ["core"] },
+  {
+    "name": "motivate others",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": ["motivate staff and colleages"],
+    "source": ["esco"]
+  },
+  { "name": "Moz", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Multitasking",
+    "aliases": ["juggle multiple", "multi-tasking", "multitask"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Multithreading",
+    "aliases": ["concurrency", "multi-threading"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  { "name": "Mutual funds", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "MySQL",
+    "aliases": [
+      "MySQL Classic Edition",
+      "MySQL Cluster CGE",
+      "MySQL Embedded",
+      "MySQL Enterprise Edition",
+      "MySQL Standard Edition"
+    ],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "National Instruments LabVIEW", "kind": "hard", "category": "backend", "aliases": [], "source": ["onet"] },
+  {
+    "name": "Negotiation",
+    "aliases": [
+      "negotiate",
+      "negotiate compromise",
+      "negotiate compromises",
+      "negotiating compromise",
+      "negotiation skills"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  { "name": "Neo4j", "aliases": [], "kind": "hard", "category": "database", "source": ["core"] },
+  { "name": "NestJS", "aliases": ["Nest.js"], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Netlify", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "Network security", "aliases": [], "kind": "hard", "category": "security", "source": ["core"] },
+  {
+    "name": "Networking",
+    "aliases": ["computer networking"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core"]
+  },
+  {
+    "name": "Neural networks",
+    "aliases": ["ANN", "neural network"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  { "name": "New Relic", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "Next.js", "aliases": ["Next JS", "NextJS"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "Nginx", "aliases": ["NGINX"], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "NISM", "aliases": ["NISM certification"], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "NLP",
+    "aliases": ["Natural Language Processing"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  { "name": "NLTK", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Nmap", "aliases": [], "kind": "hard", "category": "security", "source": ["core", "onet"] },
+  {
+    "name": "Node.js",
+    "aliases": ["Node", "Node JS", "NodeJS"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"],
+    "cased": ["Node"]
+  },
+  { "name": "NoSQL", "aliases": [], "kind": "hard", "category": "database", "source": ["core", "onet", "esco"] },
+  { "name": "Notion", "aliases": [], "kind": "hard", "category": "product", "source": ["core"], "cased": ["Notion"] },
+  { "name": "NPA management", "aliases": ["NPA"], "kind": "hard", "category": "banking", "source": ["core"] },
+  { "name": "NumPy", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  { "name": "Nuxt.js", "aliases": ["Nuxt", "NuxtJS"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "OAuth",
+    "aliases": ["OAuth 2.0", "OAuth2", "OIDC", "OpenID Connect"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  {
+    "name": "Objective-C",
+    "aliases": ["ObjC", "Objective-C 2.0"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Observability", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "OCaml", "aliases": [], "kind": "hard", "category": "language", "source": ["core"] },
+  { "name": "Odoo", "aliases": [], "kind": "hard", "category": "office", "source": ["core"] },
+  { "name": "OKRs", "aliases": ["OKR"], "kind": "hard", "category": "product", "source": ["core"] },
+  {
+    "name": "OOP",
+    "aliases": ["object oriented programming", "Object-oriented programming", "OOP concepts", "OOPS", "OOPs concepts"],
+    "kind": "hard",
+    "category": "fundamentals",
+    "source": ["core"]
+  },
+  { "name": "OpenAI API", "aliases": ["OpenAI"], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "OpenAPI", "aliases": ["Swagger"], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "OpenCV", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "OpenShift",
+    "aliases": ["Red Hat OpenShift"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Operating systems",
+    "aliases": ["OS"],
+    "kind": "hard",
+    "category": "fundamentals",
+    "source": ["core"],
+    "cased": ["OS"]
+  },
+  {
+    "name": "Operations management",
+    "aliases": ["operations"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  {
+    "name": "Oracle Cloud",
+    "aliases": ["OCI", "Oracle Cloud Infrastructure"],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Oracle Database",
+    "aliases": ["Oracle DB", "Oracle SQL"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Oracle NetSuite",
+    "aliases": ["ERP", "NetSuite", "NetSuite ERP", "Sage MAS 200", "Sage MAS 200 ERP"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  { "name": "Oracle PeopleSoft", "kind": "hard", "category": "office", "aliases": ["PeopleSoft"], "source": ["onet"] },
+  {
+    "name": "Oracle Primavera Enterprise Project Portfolio Management",
+    "kind": "hard",
+    "category": "product",
+    "aliases": ["Primavera Enterprise Project Portfolio Management"],
+    "source": ["onet"]
+  },
+  {
+    "name": "Oracle SQL Developer",
+    "kind": "hard",
+    "category": "backend",
+    "aliases": ["SQL Developer"],
+    "source": ["onet"]
+  },
+  {
+    "name": "Organizational skills",
+    "aliases": ["organisational skills", "organised", "organized", "well organized", "well-organized"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Outlook",
+    "aliases": ["Microsoft Outlook", "MS Outlook"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"],
+    "cased": ["Outlook"]
+  },
+  { "name": "OWASP", "aliases": ["OWASP Top 10"], "kind": "hard", "category": "security", "source": ["core"] },
+  {
+    "name": "Ownership",
+    "aliases": ["bias for action", "ownership mindset", "sense of ownership", "take ownership"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Pandas", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  {
+    "name": "Payment gateway integration",
+    "aliases": ["Razorpay", "Stripe API"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  {
+    "name": "Payment systems",
+    "aliases": ["payments", "payments domain"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  {
+    "name": "Payroll",
+    "aliases": ["payroll processing"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Penetration testing",
+    "aliases": ["pen testing", "pentesting", "VAPT"],
+    "kind": "hard",
+    "category": "security",
+    "source": ["core"]
+  },
+  {
+    "name": "People management",
+    "aliases": ["manage a team", "manage teams", "managing teams", "team management"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Performance marketing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Perl",
+    "aliases": ["Perl Camel", "Perl golf"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Persuasion",
+    "aliases": ["influence others", "influencing", "influencing skills", "persuade others"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "PHP",
+    "aliases": ["Php 4", "Php 5.0", "Php 5.1", "Php 5.2", "Php 5.3", "Php 5.4", "Php 6.0", "PHP-FPM"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Pinecone", "aliases": [], "kind": "hard", "category": "database", "source": ["core"] },
+  {
+    "name": "Pitch books",
+    "aliases": ["pitch deck", "pitch decks", "pitchbooks"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "PitchBook", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Pivot tables", "aliases": ["pivot table"], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "PL/SQL",
+    "aliases": ["Oracle PL/SQL"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"]
+  },
+  { "name": "Playwright", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"] },
+  { "name": "Plotly", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "PMP",
+    "aliases": ["Project Management Professional"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  {
+    "name": "Porter's Five Forces",
+    "aliases": ["five forces", "Porters Five Forces"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "Portfolio management", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "PostgreSQL",
+    "aliases": ["pgSQL", "Postgres", "psql"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "Postman", "aliases": [], "kind": "hard", "category": "testing", "source": ["core", "onet"] },
+  {
+    "name": "Power Apps",
+    "aliases": ["Microsoft Power Apps", "PowerApps"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core"]
+  },
+  {
+    "name": "Power Automate",
+    "aliases": ["Microsoft Power Automate"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Power BI",
+    "aliases": ["Microsoft Power", "Microsoft Power BI", "PowerBI"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  { "name": "Power Query", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "PowerPoint",
+    "aliases": ["Microsoft PowerPoint", "MS PowerPoint", "MS-PowerPoint", "PPT"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "PowerShell",
+    "aliases": ["Microsoft PowerShell"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "PPC",
+    "aliases": ["pay per click", "pay-per-click"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  {
+    "name": "PRD",
+    "aliases": ["PRDs", "product requirements document"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  {
+    "name": "Precedent transactions",
+    "aliases": ["precedent transaction analysis", "transaction comps"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Predictive modeling",
+    "aliases": ["predictive analytics", "predictive modelling"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  {
+    "name": "Presentation skills",
+    "aliases": ["present findings", "presentation", "presentations"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "onet"]
+  },
+  { "name": "Pricing strategy", "aliases": ["pricing"], "kind": "hard", "category": "product", "source": ["core"] },
+  {
+    "name": "Prioritization",
+    "aliases": ["prioritisation", "prioritise", "prioritise tasks", "prioritize", "prioritize tasks"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Prisma", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Private equity", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Probability", "aliases": [], "kind": "hard", "category": "fundamentals", "source": ["core"] },
+  {
+    "name": "Problem analysis",
+    "aliases": ["first principles thinking", "structured problem solving", "structured thinking"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Problem solving",
+    "aliases": ["problem solver", "problem solving skills", "problem-solving", "solve problems"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Process improvement",
+    "aliases": ["process optimization"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  {
+    "name": "Process mapping",
+    "aliases": ["process maps"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  {
+    "name": "process qualitative information",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": [
+      "analyse information",
+      "categorise information",
+      "compile information",
+      "observe information",
+      "process qualitative info",
+      "processing information",
+      "processing qualitative information"
+    ],
+    "source": ["esco"]
+  },
+  { "name": "Product analytics", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "Product discovery", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  {
+    "name": "Product lifecycle management",
+    "aliases": ["PLM", "product lifecycle"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  { "name": "Product management", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "Product marketing", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Product roadmap",
+    "aliases": ["product roadmaps", "roadmapping", "roadmaps"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  { "name": "Product strategy", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "Program management", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  {
+    "name": "Progressive Web Apps",
+    "aliases": ["PWA", "PWAs"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core"]
+  },
+  {
+    "name": "Project management",
+    "aliases": ["project planning"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core", "onet"]
+  },
+  { "name": "Prometheus", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  { "name": "Prompt engineering", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "Prototyping",
+    "aliases": ["prototypes", "rapid prototyping"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core"]
+  },
+  { "name": "Public relations", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "Public speaking",
+    "aliases": [
+      "address an audience",
+      "address audiences",
+      "addressing an audience",
+      "speak in public",
+      "speak to an audience"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Puppet",
+    "aliases": [],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet", "esco"],
+    "cased": ["Puppet"]
+  },
+  { "name": "PySpark", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  { "name": "pytest", "aliases": ["PyTest"], "kind": "hard", "category": "testing", "source": ["core"] },
+  {
+    "name": "Python",
+    "aliases": ["Python 3", "Python 3k", "Python prog", "Python3"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  { "name": "PyTorch", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core", "onet"] },
+  { "name": "Qlik", "aliases": ["Qlik Sense", "QlikView"], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Quality assurance", "aliases": ["QA"], "kind": "hard", "category": "testing", "source": ["core"] },
+  {
+    "name": "Qualys Cloud Platform",
+    "kind": "hard",
+    "category": "security",
+    "aliases": ["Cloud Platform"],
+    "source": ["onet"]
+  },
+  {
+    "name": "QuickBooks",
+    "aliases": ["Intuit QuickBooks"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "R",
+    "aliases": ["R language", "R programming", "R Studio", "RStudio"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"],
+    "ambiguous": true
+  },
+  { "name": "RabbitMQ", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "RAG",
+    "aliases": ["retrieval augmented generation", "Retrieval-Augmented Generation"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  {
+    "name": "Ratio analysis",
+    "aliases": ["financial ratios"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "RBI regulations",
+    "aliases": ["RBI compliance", "RBI guidelines"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  {
+    "name": "RDBMS",
+    "aliases": ["relational database", "relational databases"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core"]
+  },
+  {
+    "name": "React",
+    "aliases": ["React JS", "React.js", "ReactJS"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core", "onet"],
+    "cased": ["React"]
+  },
+  { "name": "React Native", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  { "name": "React Query", "aliases": ["TanStack Query"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "React Testing Library", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"] },
+  {
+    "name": "Recommendation systems",
+    "aliases": ["recommendation engine", "recommender systems"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  {
+    "name": "Reconciliation",
+    "aliases": ["bank reconciliation", "reconciliations"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Redis", "aliases": [], "kind": "hard", "category": "database", "source": ["core", "onet"] },
+  {
+    "name": "Redshift",
+    "aliases": ["Amazon Redshift"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Redux",
+    "aliases": ["React Redux", "Redux Toolkit", "RTK"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Refinitiv",
+    "aliases": ["LSEG Workspace", "Refinitiv Eikon", "Thomson Reuters Eikon"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Regression analysis",
+    "aliases": ["linear regression", "logistic regression"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  { "name": "Regression testing", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"] },
+  {
+    "name": "Regulatory compliance",
+    "aliases": ["compliance"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  { "name": "Reinforcement learning", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "Relationship management",
+    "aliases": ["client relationship management"],
+    "kind": "hard",
+    "category": "banking",
+    "source": ["core"]
+  },
+  { "name": "Remix", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "report facts",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": ["communicate facts", "detail the facts", "reporting facts"],
+    "source": ["esco"]
+  },
+  {
+    "name": "Requirements gathering",
+    "aliases": ["requirement gathering", "requirements analysis"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  {
+    "name": "Resilience",
+    "aliases": [
+      "ability to work under pressure",
+      "cope with pressure",
+      "handle pressure",
+      "thrive under pressure",
+      "work under pressure"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Responsive design",
+    "aliases": ["mobile-first design", "responsive web design"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core"]
+  },
+  {
+    "name": "REST APIs",
+    "aliases": ["API", "REST", "REST API", "RESTful", "RESTful API", "RESTful APIs", "RESTful services"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  { "name": "Retail banking", "aliases": [], "kind": "hard", "category": "banking", "source": ["core"] },
+  {
+    "name": "Retention marketing",
+    "aliases": ["customer retention"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  {
+    "name": "Risk management",
+    "aliases": ["financial risk management"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "RNN",
+    "aliases": ["LSTM", "recurrent neural networks"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  { "name": "Root cause analysis", "aliases": ["RCA"], "kind": "hard", "category": "product", "source": ["core"] },
+  {
+    "name": "Ruby",
+    "aliases": ["Ruby lang", "Ruby prog", "Ruby-gnome2"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"],
+    "cased": ["Ruby"]
+  },
+  {
+    "name": "Ruby on Rails",
+    "aliases": ["Rails", "RoR"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Rust",
+    "aliases": ["Rust lang", "Rust programming"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core"],
+    "cased": ["Rust"]
+  },
+  {
+    "name": "S3",
+    "aliases": [
+      "Amazon S3",
+      "Amazon Simple Storage Service",
+      "Amazon Simple Storage Service S3",
+      "Simple Storage Service",
+      "Simple Storage Service S3"
+    ],
+    "kind": "hard",
+    "category": "cloud",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "SaaS",
+    "aliases": ["Software as a service"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Sales",
+    "aliases": ["field sales", "inside sales"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  {
+    "name": "Salesforce",
+    "aliases": ["Salesforce CRM", "Salesforce software"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "SAP",
+    "aliases": ["SAP ERP", "SAP software"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  { "name": "SAP Concur", "kind": "hard", "category": "finance", "aliases": [], "source": ["onet"] },
+  {
+    "name": "SAP FICO",
+    "aliases": ["SAP CO", "SAP FI", "SAP FI/CO"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "SAP S/4HANA",
+    "aliases": ["S/4HANA", "S4 HANA"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core"]
+  },
+  { "name": "SAS", "aliases": ["JMP", "SAS JMP"], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  { "name": "Sass", "aliases": ["SCSS"], "kind": "hard", "category": "frontend", "source": ["core", "esco"] },
+  { "name": "Scala", "aliases": [], "kind": "hard", "category": "language", "source": ["core", "onet", "esco"] },
+  {
+    "name": "scikit-learn",
+    "aliases": ["scikit learn", "Scikit-learn", "sklearn"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core", "onet"]
+  },
+  { "name": "SciPy", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "Scrum", "aliases": ["Scrum Master"], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "Seaborn", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Selenium",
+    "aliases": ["Selenium WebDriver"],
+    "kind": "hard",
+    "category": "testing",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Self-motivation",
+    "aliases": ["highly motivated", "motivated", "self motivated", "self-motivated"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "SEM",
+    "aliases": ["search engine marketing"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "Semrush", "aliases": ["SEMrush"], "kind": "hard", "category": "marketing", "source": ["core", "onet"] },
+  {
+    "name": "SEO",
+    "aliases": [
+      "Moz search engine optimization",
+      "Moz search engine optimization SEO",
+      "search engine optimisation",
+      "search engine optimization"
+    ],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core", "onet"]
+  },
+  { "name": "Sequelize", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "Server-side rendering", "aliases": ["SSR"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "Serverless",
+    "aliases": ["serverless architecture"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  { "name": "ServiceNow", "aliases": [], "kind": "hard", "category": "office", "source": ["core", "onet"] },
+  {
+    "name": "Servlets",
+    "aliases": [
+      "JavaServer Pages",
+      "JavaServer Pages JSP",
+      "JSP",
+      "Oracle JavaServer Pages",
+      "Oracle JavaServer Pages JSP"
+    ],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  { "name": "shadcn/ui", "aliases": ["shadcn"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "SharePoint",
+    "aliases": ["Microsoft SharePoint"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  { "name": "Shopify", "aliases": ["Shopify software"], "kind": "hard", "category": "marketing", "source": ["core"] },
+  {
+    "name": "SIEM",
+    "aliases": ["IBM QRadar", "IBM QRadar SIEM", "QRadar", "QRadar SIEM"],
+    "kind": "hard",
+    "category": "security",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Single sign-on",
+    "aliases": ["Single sign-on SSO", "SSO"],
+    "kind": "hard",
+    "category": "security",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Site Reliability Engineering",
+    "aliases": ["SRE"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core"]
+  },
+  {
+    "name": "Six Sigma",
+    "aliases": ["Lean Six Sigma", "Six Sigma Black Belt", "Six Sigma Green Belt"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  { "name": "Sketch", "aliases": [], "kind": "hard", "category": "design", "source": ["core"], "cased": ["Sketch"] },
+  {
+    "name": "Slack",
+    "aliases": [],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"],
+    "cased": ["Slack"]
+  },
+  { "name": "Snowflake", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  { "name": "SNS", "aliases": ["Amazon SNS"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "SOC 2", "aliases": [], "kind": "hard", "category": "security", "source": ["core"] },
+  {
+    "name": "Social media marketing",
+    "aliases": ["SMM", "social media management"],
+    "kind": "hard",
+    "category": "marketing",
+    "source": ["core"]
+  },
+  { "name": "Socket.IO", "aliases": ["Socket.io"], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "SOLID principles",
+    "aliases": ["SOLID"],
+    "kind": "hard",
+    "category": "fundamentals",
+    "source": ["core"],
+    "cased": ["SOLID"]
+  },
+  { "name": "Solidity", "aliases": [], "kind": "hard", "category": "language", "source": ["core", "onet"] },
+  { "name": "spaCy", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Sparta Systems TrackWise", "kind": "hard", "category": "tools", "aliases": [], "source": ["onet"] },
+  {
+    "name": "Splunk",
+    "aliases": ["Splunk Enterprise"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Spring",
+    "aliases": ["Spring Framework", "Spring MVC", "Spring Security"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"],
+    "ambiguous": true
+  },
+  {
+    "name": "Spring Boot",
+    "aliases": ["SpringBoot"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "SPSS",
+    "aliases": ["IBM SPSS", "IBM SPSS Statistics", "SPSS Statistics"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "SQL",
+    "aliases": ["Informix 4GL/SQL", "Structured Query Language", "Structured query language SQL"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "SQL query optimization",
+    "aliases": ["query optimization", "query tuning"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core"]
+  },
+  { "name": "SQLite", "aliases": [], "kind": "hard", "category": "database", "source": ["core"] },
+  { "name": "SQS", "aliases": ["Amazon SQS"], "kind": "hard", "category": "cloud", "source": ["core"] },
+  {
+    "name": "SSIS",
+    "aliases": [
+      "Microsoft SQL Server Integration Services",
+      "Microsoft SQL Server Integration Services SSIS",
+      "SQL Server Integration Services",
+      "SQL Server Integration Services SSIS"
+    ],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "SSRS",
+    "aliases": [
+      "Microsoft SQL Server Reporting Services",
+      "Microsoft SQL Server Reporting Services SSRS",
+      "SQL Server Reporting Services",
+      "SQL Server Reporting Services SSRS"
+    ],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Stable Diffusion",
+    "aliases": ["diffusion models"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"]
+  },
+  {
+    "name": "Stakeholder management",
+    "aliases": ["manage stakeholders", "stakeholder communication", "stakeholder engagement"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Stata", "aliases": ["StataCorp Stata"], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  {
+    "name": "Statistics",
+    "aliases": ["statistical analysis", "statistical modeling", "statistical modelling"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  {
+    "name": "Statutory audit",
+    "aliases": ["audit", "auditing", "external audit"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Storybook", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "Storytelling",
+    "aliases": ["data storytelling", "tell stories"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Strapi", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Strategic thinking",
+    "aliases": ["strategic mindset", "think strategically"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Strategy consulting", "aliases": [], "kind": "hard", "category": "consulting", "source": ["core"] },
+  { "name": "Supabase", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Supply chain management",
+    "aliases": ["SCM", "supply chain"],
+    "kind": "hard",
+    "category": "consulting",
+    "source": ["core"]
+  },
+  {
+    "name": "support colleagues",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": [
+      "assist colleagues",
+      "encourage colleagues",
+      "help colleagues",
+      "support colleague",
+      "supporting colleagues"
+    ],
+    "source": ["esco"]
+  },
+  { "name": "Svelte", "aliases": ["SvelteKit"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "SVN",
+    "aliases": ["Apache Subversion", "Apache Subversion SVN", "Subversion", "Subversion SVN"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Swift",
+    "aliases": ["Swift programming"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"],
+    "cased": ["Swift"]
+  },
+  { "name": "SwiftUI", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  { "name": "SWOT analysis", "aliases": ["SWOT"], "kind": "hard", "category": "consulting", "source": ["core"] },
+  { "name": "System design", "aliases": ["systems design"], "kind": "hard", "category": "backend", "source": ["core"] },
+  { "name": "SystemVerilog", "aliases": [], "kind": "hard", "category": "language", "source": ["core", "onet"] },
+  {
+    "name": "T-SQL",
+    "aliases": ["Transact-SQL", "TSQL"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"]
+  },
+  { "name": "Tableau", "aliases": [], "kind": "hard", "category": "data", "source": ["core", "onet"] },
+  {
+    "name": "Tailwind CSS",
+    "aliases": ["Tailwind", "TailwindCSS"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core"]
+  },
+  { "name": "Talend", "aliases": [], "kind": "hard", "category": "data", "source": ["core"] },
+  {
+    "name": "Tally",
+    "aliases": ["Tally ERP", "Tally ERP 9", "Tally ERP9", "Tally Prime", "TallyPrime"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"],
+    "cased": ["Tally"]
+  },
+  {
+    "name": "Taxation",
+    "aliases": ["direct tax", "direct taxation", "indirect tax", "indirect taxation"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "TCP/IP", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  {
+    "name": "TDD",
+    "aliases": ["test driven development", "test-driven development"],
+    "kind": "hard",
+    "category": "testing",
+    "source": ["core"]
+  },
+  { "name": "TDS", "aliases": ["tax deducted at source"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Teaching", "aliases": ["teach", "tutoring"], "kind": "soft", "category": "soft", "source": ["core"] },
+  {
+    "name": "Team building",
+    "aliases": ["build a team", "build teams"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Teamwork",
+    "aliases": [
+      "team player",
+      "team work",
+      "teamwork principles",
+      "work in groups",
+      "work in squads",
+      "work in teams",
+      "working in teams"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  { "name": "TechSmith Camtasia", "kind": "hard", "category": "design", "aliases": [], "source": ["onet"] },
+  { "name": "Tenable Nessus", "kind": "hard", "category": "security", "aliases": [], "source": ["onet"] },
+  { "name": "TensorFlow", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core", "onet"] },
+  {
+    "name": "Teradata",
+    "aliases": ["Teradata Database"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core", "onet", "esco"]
+  },
+  {
+    "name": "Terraform",
+    "aliases": ["IBM Terraform"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Test automation",
+    "aliases": ["automated testing", "automation testing"],
+    "kind": "hard",
+    "category": "testing",
+    "source": ["core"]
+  },
+  { "name": "TestNG", "aliases": [], "kind": "hard", "category": "testing", "source": ["core", "onet"] },
+  { "name": "Three.js", "aliases": ["ThreeJS"], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "Time management",
+    "aliases": [
+      "draw up time line",
+      "manage schedule",
+      "manage time",
+      "managing time",
+      "meet deadlines",
+      "meeting deadlines",
+      "plan time",
+      "work out time line"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core", "esco"]
+  },
+  {
+    "name": "Time series analysis",
+    "aliases": ["time series", "time series forecasting"],
+    "kind": "hard",
+    "category": "data",
+    "source": ["core"]
+  },
+  { "name": "Trade finance", "aliases": [], "kind": "hard", "category": "banking", "source": ["core"] },
+  {
+    "name": "Transformers",
+    "aliases": ["BERT", "transformer models"],
+    "kind": "hard",
+    "category": "ai-ml",
+    "source": ["core"],
+    "cased": ["BERT"]
+  },
+  { "name": "Treasury", "aliases": ["treasury management"], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Trello", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "TypeORM", "aliases": [], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "TypeScript",
+    "aliases": ["TS"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet", "esco"],
+    "cased": ["TS"]
+  },
+  { "name": "Typing", "aliases": ["typing speed"], "kind": "hard", "category": "office", "source": ["core"] },
+  { "name": "Typography", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  {
+    "name": "UI design",
+    "aliases": ["UI designer skills", "user interface design"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core"]
+  },
+  {
+    "name": "UI/UX",
+    "aliases": ["UI UX", "UI/UX design", "UX/UI"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core"]
+  },
+  { "name": "UIKit", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  { "name": "Unit economics", "aliases": [], "kind": "hard", "category": "product", "source": ["core"] },
+  { "name": "Unit testing", "aliases": ["unit tests"], "kind": "hard", "category": "testing", "source": ["core"] },
+  {
+    "name": "Unity",
+    "aliases": ["Unity Technologies Unity", "Unity3D"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"],
+    "cased": ["Unity"]
+  },
+  { "name": "Unix", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "onet"] },
+  {
+    "name": "Unreal Engine",
+    "aliases": ["Unreal Technology Unreal Engine"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  { "name": "UPI", "aliases": [], "kind": "hard", "category": "banking", "source": ["core"] },
+  { "name": "Usability testing", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  {
+    "name": "use body language",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": ["apply body language", "utilise body language"],
+    "source": ["esco"]
+  },
+  {
+    "name": "use learning strategies",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": [
+      "apply learning strategies",
+      "monitor learning process",
+      "plan learning",
+      "prioritise learning tasks",
+      "reflect on learning process",
+      "use different learning styles",
+      "using learning strategies",
+      "utilise learning strategies"
+    ],
+    "source": ["esco"]
+  },
+  {
+    "name": "use questioning techniques",
+    "kind": "soft",
+    "category": "soft",
+    "aliases": ["apply questioning techniques", "using questioning techniques", "utilise questioning techniques"],
+    "source": ["esco"]
+  },
+  { "name": "User research", "aliases": ["UX research"], "kind": "hard", "category": "design", "source": ["core"] },
+  { "name": "User stories", "aliases": ["user story"], "kind": "hard", "category": "product", "source": ["core"] },
+  {
+    "name": "UX design",
+    "aliases": ["user experience", "user experience design"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core"]
+  },
+  { "name": "Vagrant", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "esco"] },
+  {
+    "name": "Valuation",
+    "aliases": ["business valuation", "company valuation", "valuations"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  { "name": "Variance analysis", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "VBA",
+    "aliases": [
+      "Microsoft Visual Basic for Applications",
+      "Microsoft Visual Basic for Applications VBA",
+      "Visual Basic for Applications",
+      "Visual Basic for Applications VBA"
+    ],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Vector databases",
+    "aliases": ["ChromaDB", "Milvus", "pgvector", "Qdrant", "vector database", "vector DB", "Weaviate"],
+    "kind": "hard",
+    "category": "database",
+    "source": ["core"]
+  },
+  { "name": "Venture capital", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Vercel", "aliases": [], "kind": "hard", "category": "cloud", "source": ["core"] },
+  { "name": "Verilog", "aliases": [], "kind": "hard", "category": "language", "source": ["core", "onet"] },
+  { "name": "Vertex AI", "aliases": ["Google Vertex AI"], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "VHDL", "aliases": [], "kind": "hard", "category": "language", "source": ["core"] },
+  { "name": "Video editing", "aliases": [], "kind": "hard", "category": "design", "source": ["core", "onet"] },
+  { "name": "Vim", "aliases": ["Neovim"], "kind": "hard", "category": "office", "source": ["core"], "cased": ["Vim"] },
+  { "name": "Virtualization", "aliases": [], "kind": "hard", "category": "devops", "source": ["core"] },
+  {
+    "name": "Visual Basic",
+    "aliases": ["Microsoft Visual Basic", "VB.NET"],
+    "kind": "hard",
+    "category": "language",
+    "source": ["core", "onet"]
+  },
+  { "name": "Visual design", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  {
+    "name": "Visual Studio",
+    "aliases": ["Microsoft Visual Studio"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  { "name": "Vite", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "Vitest", "aliases": [], "kind": "hard", "category": "testing", "source": ["core"] },
+  { "name": "VLOOKUP", "aliases": ["HLOOKUP", "XLOOKUP"], "kind": "hard", "category": "data", "source": ["core"] },
+  { "name": "VMware", "aliases": [], "kind": "hard", "category": "devops", "source": ["core", "onet"] },
+  {
+    "name": "VS Code",
+    "aliases": ["Visual Studio Code", "VSCode"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core"]
+  },
+  {
+    "name": "Vue.js",
+    "aliases": ["Vue", "Vue 3", "VueJS"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core", "onet"],
+    "cased": ["Vue"]
+  },
+  {
+    "name": "Vulnerability assessment",
+    "aliases": ["vulnerability management"],
+    "kind": "hard",
+    "category": "security",
+    "source": ["core"]
+  },
+  {
+    "name": "Waterfall",
+    "aliases": ["Waterfall methodology"],
+    "kind": "hard",
+    "category": "product",
+    "source": ["core"]
+  },
+  { "name": "Wealth management", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  {
+    "name": "Web accessibility",
+    "aliases": ["a11y", "accessibility", "WCAG"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core"]
+  },
+  { "name": "Web Components", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  {
+    "name": "Web performance",
+    "aliases": ["Core Web Vitals"],
+    "kind": "hard",
+    "category": "frontend",
+    "source": ["core"]
+  },
+  {
+    "name": "Web scraping",
+    "aliases": ["BeautifulSoup", "Scrapy"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core"]
+  },
+  { "name": "Webflow", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Webpack", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] },
+  { "name": "WebSockets", "aliases": ["WebSocket"], "kind": "hard", "category": "backend", "source": ["core"] },
+  {
+    "name": "Willingness to learn",
+    "aliases": [
+      "continuous learning",
+      "eager to learn",
+      "fast learner",
+      "growth mindset",
+      "learning agility",
+      "quick learner"
+    ],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Windows Server",
+    "aliases": ["Microsoft Windows Server"],
+    "kind": "hard",
+    "category": "devops",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Wireframing",
+    "aliases": ["wireframe", "wireframes"],
+    "kind": "hard",
+    "category": "design",
+    "source": ["core"]
+  },
+  { "name": "Wireshark", "aliases": [], "kind": "hard", "category": "security", "source": ["core", "onet", "esco"] },
+  { "name": "WordPress", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core", "onet", "esco"] },
+  {
+    "name": "Work ethic",
+    "aliases": ["strong work ethic", "work ethics"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  {
+    "name": "Workday",
+    "aliases": ["Workday software"],
+    "kind": "hard",
+    "category": "office",
+    "source": ["core", "onet"]
+  },
+  {
+    "name": "Working capital management",
+    "aliases": ["working capital"],
+    "kind": "hard",
+    "category": "finance",
+    "source": ["core"]
+  },
+  {
+    "name": "Written skills",
+    "aliases": ["business writing", "report writing", "writing skills"],
+    "kind": "soft",
+    "category": "soft",
+    "source": ["core"]
+  },
+  { "name": "Xactware Xactimate", "kind": "hard", "category": "database", "aliases": [], "source": ["onet"] },
+  { "name": "Xamarin", "aliases": [], "kind": "hard", "category": "mobile", "source": ["core"] },
+  {
+    "name": "Xcode",
+    "aliases": ["Xcode 4", "Xcode 5", "Xcode 6", "Xcode 7", "Xcode IDE"],
+    "kind": "hard",
+    "category": "mobile",
+    "source": ["core", "esco"]
+  },
+  { "name": "XGBoost", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  {
+    "name": "XML",
+    "aliases": ["Extensible Markup Language", "Extensible markup language XML"],
+    "kind": "hard",
+    "category": "backend",
+    "source": ["core", "onet"]
+  },
+  { "name": "YOLO", "aliases": [], "kind": "hard", "category": "ai-ml", "source": ["core"] },
+  { "name": "Zeplin", "aliases": [], "kind": "hard", "category": "design", "source": ["core"] },
+  { "name": "Zig", "aliases": [], "kind": "hard", "category": "language", "source": ["core"], "cased": ["Zig"] },
+  { "name": "Zoho", "aliases": [], "kind": "hard", "category": "office", "source": ["core"] },
+  { "name": "Zoho Books", "aliases": [], "kind": "hard", "category": "finance", "source": ["core"] },
+  { "name": "Zoho CRM", "aliases": [], "kind": "hard", "category": "marketing", "source": ["core"] },
+  { "name": "Zoom", "aliases": [], "kind": "hard", "category": "office", "source": ["core"], "cased": ["Zoom"] },
+  { "name": "Zustand", "aliases": [], "kind": "hard", "category": "frontend", "source": ["core"] }
+]
