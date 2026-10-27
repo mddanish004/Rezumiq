@@ -65,7 +65,11 @@ Next: the production deployment pass (environment, Dodo live mode, and CORS/cook
 
 ## Production notes
 
-- Set `FRONTEND_URL` on the API to the deployed origin; share links and verification/reset email links are built from it.
+- Deploy on Vercel with the repository root set to `frontend`. Build with `pnpm build`, output `dist`.
+  `vercel.json` rewrites every path to `index.html` for the root-level public pages.
 - Set `VITE_API_URL` for the frontend build, and add the frontend origin to `CORS_ALLOWED_ORIGINS`
   and `CSRF_TRUSTED_ORIGINS` on the API.
+- Set `FRONTEND_URL` on the API to the deployed origin; share links and verification/reset email links are built from it.
+- Set `COOKIE_DOMAIN` on the API to the shared parent domain (e.g. `.rezumiq.com`). The frontend reads the
+  `csrftoken` cookie from `document.cookie`, so it must be set on the parent domain, not only on the API host.
 - Public share pages live at `/:username` and `/:username/:slug`.

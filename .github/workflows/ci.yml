@@ -33,7 +33,7 @@ jobs:
           --health-timeout 5s
           --health-retries 10
     env:
-      DJANGO_SECRET_KEY: ci-only-dummy-secret-not-used-at-runtime-0000
+      DJANGO_SECRET_KEY: ci-only-dummy-secret-not-used-at-runtime-0000000000000000
       DJANGO_DEBUG: "true"
       DATABASE_URL: postgres://postgres:postgres@localhost:5432/rezumiq
     steps:
@@ -57,6 +57,13 @@ jobs:
           COMPILE_TIMEOUT_MS: "600000"
       - run: ruff check .
       - run: ruff format --check .
+      - name: Production settings check
+        run: python manage.py check --deploy --fail-level ERROR
+        env:
+          DJANGO_DEBUG: "false"
+          SMTP_HOST: smtp.example.com
+          ALLOWED_HOSTS: api.rezumiq.com
+          COOKIE_DOMAIN: .rezumiq.com
       - run: pytest
 
   frontend:

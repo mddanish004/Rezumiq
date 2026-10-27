@@ -11,3 +11,4 @@ boto3>=1.35,<2
 pypdf>=4.3,<6
 pdfminer.six>=20250506
 openai>=1.50,<2
+sentry-sdk>=2.19,<3

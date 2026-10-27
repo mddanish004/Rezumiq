@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from .extract import BOLD_FONT, ICON_FONT  # noqa: F401  (ICON_FONT: TS re-exports it from parse.ts)
+from .extract import BOLD_FONT, ICON_FONT  # noqa: F401
 
 SEPARATORS = {
     "|",

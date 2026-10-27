@@ -30,8 +30,8 @@ rebuilt on a new stack under the name Rezumiq: a Django API and a React + Vite a
 ## Deploy plan
 
 The API runs on Render (Docker service, migrations on release). The frontend runs on Vercel. The database is Postgres
-(Neon in production), uploads and compiled PDFs live in Cloudflare R2, and payments run through Dodo. CI lives in
-`.github/`.
+(Neon in production), uploads and compiled PDFs live in Cloudflare R2, and payments run through Dodo. The root
+`render.yaml` defines the API service and the maintenance cron; CI lives in `.github/`.
 
 ## Run it locally
 

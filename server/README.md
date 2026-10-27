@@ -69,14 +69,17 @@ Create an OAuth client (Web) in Google Cloud console. Add
 
 ## Production
 
-The Dockerfile is the Render service image. Render supplies `PORT`; secrets come from the service's environment
-variables. Migrations run as a release command, not at boot:
+The Dockerfile is the Render service image. The repository's root `render.yaml` defines the web service and the
+daily maintenance cron. Apply it as a Blueprint in Render, then fill in every `sync: false` value. Render supplies
+`PORT`; secrets come from the service's environment variables. Migrations run as the pre-deploy command, not at
+boot:
 
 ```sh
 python manage.py migrate --noinput
 ```
 
 The container starts Gunicorn bound to `$PORT`. `/health` gates rollout and `/health/deep` backs the uptime job.
+`RENDER_EXTERNAL_HOSTNAME` is added to `ALLOWED_HOSTS` automatically, so the default `onrender.com` host also works.
 
 ### Environment checklist
 
@@ -92,13 +95,15 @@ Copy `.env.example` and set at least:
 | `SMTP_HOST` and friends | Required; verification and password reset fail without mail. |
 | `CORS_ALLOWED_ORIGINS` | Frontend origin(s), comma separated. |
 | `CSRF_TRUSTED_ORIGINS` | Same origins. Defaults to `CORS_ALLOWED_ORIGINS`. |
-| `COOKIE_DOMAIN` | Parent domain, e.g. `.rezumiq.com`, so the app and API share the session. |
+| `COOKIE_DOMAIN` | Parent domain, e.g. `.rezumiq.com`, so the app and API share the session. Also the default for `CSRF_COOKIE_DOMAIN`, which the frontend reads from `document.cookie`. |
 | `COOKIE_SAMESITE` | `Lax` for a shared parent domain. `None` only for unrelated domains, and it requires HTTPS. |
+| `SECURE_HSTS_SECONDS` | HSTS max-age. Defaults to one year in production; set `0` while validating a domain. |
 | `ADMIN_EMAILS` | Staff addresses for the control room. Verify the email after signup. |
 | `AI_KEY_ENCRYPTION_SECRET` | Long random value. Keep it stable or stored BYOK keys stop decrypting. |
 | `STORAGE_DRIVER` / `R2_*` | `r2` plus the account, bucket, and access keys for uploads and compiled PDFs. |
 | `TECTONIC_ONLY_CACHED` | `true` in production; the image ships the cached bundle. |
 | `GROQ_API_KEY` | Required for the free-tier AI flows. |
+| `SENTRY_DSN` | Optional. Enables Sentry error reporting; `SENTRY_ENVIRONMENT` labels the events. |
 
 ### Dodo Payments
 
@@ -120,8 +125,9 @@ Copy `.env.example` and set at least:
 
 ### Deploy checklist
 
-1. Create the Render web service from `server/Dockerfile`; add the env vars above.
-2. Run `python manage.py migrate --noinput` in the release command.
+1. Apply the root `render.yaml` Blueprint in Render and fill in every `sync: false` value. It creates the web
+   service and the daily maintenance cron.
+2. Confirm the pre-deploy migration ran in the deploy log.
 3. Run `python manage.py seed_templates` once (idempotent).
 4. Confirm `/health/deep` reports `database: ok` and `compiler: ok`.
 5. Add the deployed frontend origin to `CORS_ALLOWED_ORIGINS` and `CSRF_TRUSTED_ORIGINS`.
@@ -129,17 +135,20 @@ Copy `.env.example` and set at least:
 7. Create the live Dodo products, switch the key and environment, and register the webhook.
 8. Sign in with an address in `ADMIN_EMAILS`, verify the email, then open `/app/admin`.
 9. Compile one PDF and open one share link from a signed-out browser.
-10. Add the daily `run_maintenance` cron job.
+10. Confirm the maintenance cron has a successful run in Render's cron history.
 
 ### Operations
 
 - Gunicorn reads `WEB_CONCURRENCY` (default 2), `GUNICORN_THREADS` (default 2), and `GUNICORN_TIMEOUT`
   (default 120s) from the environment.
-- Schedule `python manage.py run_maintenance` daily as a Render cron job on the same image and environment.
+- The blueprint schedules `python manage.py run_maintenance` daily at 03:00 UTC on the same image and environment.
   It expires subscriptions, prunes old uploads and deleted resumes, and purges stale guests.
 - Public ATS allows 20 requests/min per IP; share password guesses allow 10 failures per link per 10 minutes.
   Allauth limits login, signup, and password reset. These counters use Django's cache, which is per process
   in the default configuration; point `CACHES` at Redis if several instances must share one budget.
+- `.github/workflows/uptime.yml` checks `/health/deep` every 30 minutes once the API is live; a failed run
+  notifies the repository maintainers.
+- Set `SENTRY_DSN` to capture unhandled errors and 500 logs; without it, they only reach the Render logs.
 
 ### Secrets
 

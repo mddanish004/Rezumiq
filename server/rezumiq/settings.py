@@ -43,6 +43,9 @@ if SECRET_KEY is None:
     raise ImproperlyConfigured("DJANGO_SECRET_KEY is required when DJANGO_DEBUG is false")
 
 ALLOWED_HOSTS = env_list("ALLOWED_HOSTS", ("localhost", "127.0.0.1"))
+render_external_hostname = os.getenv("RENDER_EXTERNAL_HOSTNAME")
+if render_external_hostname:
+    ALLOWED_HOSTS.append(render_external_hostname)
 
 CORS_ALLOWED_ORIGINS = env_list(
     "CORS_ALLOWED_ORIGINS",
@@ -214,6 +217,7 @@ ENABLE_GUEST_LOGIN = env_bool("ENABLE_GUEST_LOGIN", DEBUG)
 GUEST_TTL_DAYS = env_int("GUEST_TTL_DAYS", 30)
 
 SESSION_COOKIE_DOMAIN = os.getenv("COOKIE_DOMAIN") or None
+CSRF_COOKIE_DOMAIN = os.getenv("CSRF_COOKIE_DOMAIN") or SESSION_COOKIE_DOMAIN
 COOKIE_SAMESITE = os.getenv("COOKIE_SAMESITE", "Lax")
 SESSION_COOKIE_SAMESITE = COOKIE_SAMESITE
 CSRF_COOKIE_SAMESITE = COOKIE_SAMESITE
@@ -221,6 +225,8 @@ SECURE_SSL_REDIRECT = not DEBUG
 if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_SECONDS = env_int("SECURE_HSTS_SECONDS", 31_536_000)
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "UTC"
@@ -255,3 +261,14 @@ else:
     raise ImproperlyConfigured("SMTP_HOST is required when DJANGO_DEBUG is false")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+SENTRY_DSN = os.getenv("SENTRY_DSN", "")
+if SENTRY_DSN:
+    import sentry_sdk
+
+    sentry_sdk.init(
+        dsn=SENTRY_DSN,
+        environment=os.getenv("SENTRY_ENVIRONMENT", "production"),
+        release=os.getenv("RENDER_GIT_COMMIT"),
+        send_default_pii=False,
+    )

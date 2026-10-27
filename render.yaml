@@ -1,0 +1,108 @@
+envVarGroups:
+  - name: rezumiq-shared
+    envVars:
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: ALLOWED_HOSTS
+        value: api.rezumiq.com
+      - key: FRONTEND_URL
+        value: https://rezumiq.com
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://rezumiq.com,https://www.rezumiq.com
+      - key: CSRF_TRUSTED_ORIGINS
+        value: https://rezumiq.com,https://www.rezumiq.com
+      - key: COOKIE_DOMAIN
+        value: .rezumiq.com
+      - key: COOKIE_SAMESITE
+        value: Lax
+      - key: SMTP_PORT
+        value: "587"
+      - key: EMAIL_FROM
+        value: "Rezumiq <no-reply@rezumiq.com>"
+      - key: AI_PROVIDER
+        value: groq
+      - key: STORAGE_DRIVER
+        value: r2
+      - key: TECTONIC_ONLY_CACHED
+        value: "true"
+      - key: DODO_ENVIRONMENT
+        value: live_mode
+      - key: SECURE_HSTS_SECONDS
+        value: "31536000"
+
+services:
+  - type: web
+    name: rezumiq-api
+    runtime: docker
+    branch: main
+    dockerfilePath: ./server/Dockerfile
+    dockerContext: ./server
+    healthCheckPath: /health
+    preDeployCommand: python manage.py migrate --noinput
+    envVars:
+      - fromGroup: rezumiq-shared
+      - key: DATABASE_URL
+        sync: false
+      - key: DJANGO_SECRET_KEY
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: ADMIN_EMAILS
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: AI_KEY_ENCRYPTION_SECRET
+        sync: false
+      - key: R2_ACCOUNT_ID
+        sync: false
+      - key: R2_ACCESS_KEY_ID
+        sync: false
+      - key: R2_SECRET_ACCESS_KEY
+        sync: false
+      - key: R2_BUCKET
+        sync: false
+      - key: DODO_API_KEY
+        sync: false
+      - key: DODO_SEASON_PASS_PRODUCT_ID
+        sync: false
+      - key: DODO_PRO_PRODUCT_ID
+        sync: false
+      - key: DODO_WEBHOOK_KEY
+        sync: false
+
+  - type: cron
+    name: rezumiq-maintenance
+    runtime: docker
+    branch: main
+    schedule: "0 3 * * *"
+    dockerfilePath: ./server/Dockerfile
+    dockerContext: ./server
+    dockerCommand: python manage.py run_maintenance
+    envVars:
+      - fromGroup: rezumiq-shared
+      - key: DATABASE_URL
+        sync: false
+      - key: DJANGO_SECRET_KEY
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: R2_ACCOUNT_ID
+        sync: false
+      - key: R2_ACCESS_KEY_ID
+        sync: false
+      - key: R2_SECRET_ACCESS_KEY
+        sync: false
+      - key: R2_BUCKET
+        sync: false
