@@ -24,4 +24,8 @@ RUN DJANGO_SECRET_KEY=build-only-dummy DATABASE_URL=postgres://build@localhost/b
     python manage.py collectstatic --noinput
 
 EXPOSE 8000
-CMD ["sh", "-c", "exec gunicorn rezumiq.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers ${WEB_CONCURRENCY:-2} --threads ${GUNICORN_THREADS:-2} --timeout ${GUNICORN_TIMEOUT:-120}"]
+# Free-tier Render web services have no pre-deploy command and no shell access,
+# so migrations and template seeding run at boot instead (both are idempotent).
+# If you move to a paid web service with a pre-deploy command, move them back
+# there to keep deploys zero-downtime.
+CMD ["sh", "-c", "python manage.py migrate --noinput --skip-checks && python manage.py seed_templates && exec gunicorn rezumiq.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers ${WEB_CONCURRENCY:-2} --threads ${GUNICORN_THREADS:-2} --timeout ${GUNICORN_TIMEOUT:-120}"]

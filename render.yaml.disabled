@@ -1,3 +1,10 @@
+# Render Blueprint definition, kept for when a payment method is on file.
+# Renamed (to .disabled) so Render does not auto-detect it as a Blueprint:
+# Blueprints require a card on file, but a manual Web Service can be created
+# without going through this file. Manual setup is documented in
+# server/README.md ("Production"). To re-enable, rename to render.yaml and
+# apply as a Blueprint in Render.
+
 envVarGroups:
   - name: rezumiq-shared
     envVars:
