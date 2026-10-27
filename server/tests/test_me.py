@@ -1,16 +1,14 @@
 """Tests for the /v1/me lifecycle, username rules, suspension and export."""
 
-from allauth.account.models import EmailAddress
 from django.test import Client
 
 from accounts.models import User
 
 
 def make_user(email="saurav@example.com", username="saurav", name="Saurav Jha") -> User:
-    user = User.objects.create_user(username=username, email=email, password="pw")
-    user.name = name
-    user.save()
-    EmailAddress.objects.create(user=user, email=user.email, verified=True, primary=True)
+    user = User.objects.create_user(
+        username=username, email=email, password="pw", email_verified=True, name=name
+    )
     return user
 
 
@@ -48,11 +46,13 @@ def test_me_is_admin_only_for_configured_verified_email(client: Client, db, sett
     settings.ADMIN_EMAILS = [user.email]
     assert client.get("/v1/me").json()["data"]["isAdmin"] is False
 
-    EmailAddress.objects.create(user=user, email=user.email, verified=True, primary=True)
+    user.email_verified = True
+    user.save(update_fields=["email_verified"])
     assert client.get("/v1/me").json()["data"]["isAdmin"] is True
 
     other = User.objects.create_user(username="other", email="other@example.com", password="pw")
-    EmailAddress.objects.create(user=other, email=other.email, verified=True, primary=True)
+    other.email_verified = True
+    other.save(update_fields=["email_verified"])
     client.force_login(other)
     assert client.get("/v1/me").json()["data"]["isAdmin"] is False
 

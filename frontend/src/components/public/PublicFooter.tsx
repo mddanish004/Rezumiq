@@ -29,7 +29,6 @@ export function PublicFooter() {
           links={[
             { label: "Sign in", to: "/login" },
             { label: "Create account", to: "/signup" },
-            { label: "Forgot password", to: "/forgot-password" },
           ]}
         />
         <FooterColumn

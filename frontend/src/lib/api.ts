@@ -22,6 +22,12 @@ type RequestOptions = {
   allow401?: boolean;
 };
 
+let tokenGetter: (() => Promise<string | null>) | undefined;
+
+export function setTokenGetter(getter: () => Promise<string | null>) {
+  tokenGetter = getter;
+}
+
 function readCookie(name: string) {
   return document.cookie
     .split("; ")
@@ -36,7 +42,7 @@ export async function primeCsrf() {
     csrfPrimed = true;
     return;
   }
-  await fetch(`${API_URL}/_allauth/browser/v1/config`, {
+  await fetch(`${API_URL}/v1/csrf`, {
     credentials: "include",
     headers: { Accept: "application/json" },
   });
@@ -52,6 +58,10 @@ async function request<T>(path: string, options: RequestOptions = {}): Promise<T
     ...options.headers,
   };
   if (options.body !== undefined) headers["Content-Type"] = "application/json";
+  if (tokenGetter) {
+    const token = await tokenGetter();
+    if (token) headers["Authorization"] = `Bearer ${token}`;
+  }
   if (unsafe) {
     const token = readCookie("csrftoken");
     if (token) headers["X-CSRFToken"] = decodeURIComponent(token);
@@ -76,12 +86,7 @@ async function request<T>(path: string, options: RequestOptions = {}): Promise<T
 
   if (!response.ok) {
     const apiError = (payload as { error?: { code?: string; message?: string; details?: unknown } })?.error;
-    const allauthError = payload as { errors?: Array<{ message?: string }>; detail?: string };
-    const message =
-      apiError?.message ??
-      allauthError?.errors?.[0]?.message ??
-      allauthError?.detail ??
-      `Request failed (${response.status})`;
+    const message = apiError?.message ?? `Request failed (${response.status})`;
     if (!(options.allow401 && response.status === 401)) {
       throw new ApiError(response.status, message, apiError?.code, apiError?.details);
     }
@@ -684,11 +689,6 @@ export type AdminTraffic = {
   data: unknown | null;
 };
 
-export type AuthSession = {
-  meta?: { is_authenticated?: boolean };
-  data?: { user?: { id: number; email: string; display?: string } };
-};
-
 export function csrfToken() {
   const token = readCookie("csrftoken");
   return token ? decodeURIComponent(token) : "";
@@ -700,8 +700,12 @@ export async function previewPdf(
 ): Promise<{ blob: Blob; pageCount: number }> {
   await primeCsrf();
   const headers: Record<string, string> = { Accept: "application/pdf", "Content-Type": "application/json" };
-  const token = readCookie("csrftoken");
-  if (token) headers["X-CSRFToken"] = decodeURIComponent(token);
+  if (tokenGetter) {
+    const token = await tokenGetter();
+    if (token) headers["Authorization"] = `Bearer ${token}`;
+  }
+  const csrf = readCookie("csrftoken");
+  if (csrf) headers["X-CSRFToken"] = decodeURIComponent(csrf);
   const response = await fetch(`${API_URL}/v1/previews`, {
     method: "POST",
     credentials: "include",
@@ -740,8 +744,12 @@ export async function uploadFile(file: File): Promise<UploadedFile> {
   const form = new FormData();
   form.append("file", file);
   const headers: Record<string, string> = { Accept: "application/json" };
-  const token = readCookie("csrftoken");
-  if (token) headers["X-CSRFToken"] = decodeURIComponent(token);
+  if (tokenGetter) {
+    const token = await tokenGetter();
+    if (token) headers["Authorization"] = `Bearer ${token}`;
+  }
+  const csrf = readCookie("csrftoken");
+  if (csrf) headers["X-CSRFToken"] = decodeURIComponent(csrf);
   const response = await fetch(`${API_URL}/v1/uploads`, {
     method: "POST",
     credentials: "include",
@@ -784,7 +792,16 @@ export const api = {
   usernameAvailable: (username: string) =>
     request<{ username: string; available: boolean }>(`/v1/usernames/${encodeURIComponent(username)}`),
   deleteMe: () => request<null>("/v1/me", { method: "DELETE" }),
-  dataExportUrl: () => `${API_URL}/v1/me/data`,
+  downloadMyData: async () => {
+    const data = await request<unknown>("/v1/me/data");
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "my-data.json";
+    anchor.click();
+    URL.revokeObjectURL(url);
+  },
   aiKeys: () => request<AiKey[]>("/v1/me/ai-keys"),
   putAiKey: (provider: string, apiKey: string, modelId?: string) =>
     request<AiKey>(`/v1/me/ai-keys/${provider}`, {
@@ -958,29 +975,4 @@ export const api = {
       method: "POST",
       body: { jobId: jobId || null },
     }),
-  session: () => request<AuthSession>("/_allauth/browser/v1/auth/session", { allow401: true }),
-  login: (email: string, password: string) =>
-    request<AuthSession>("/_allauth/browser/v1/auth/login", { method: "POST", body: { email, password } }),
-  signup: (email: string, password: string) =>
-    request<AuthSession>("/_allauth/browser/v1/auth/signup", { method: "POST", body: { email, password } }),
-  logout: () => request<AuthSession>("/_allauth/browser/v1/auth/session", { method: "DELETE" }),
-  requestPasswordReset: (email: string) =>
-    request<unknown>("/_allauth/browser/v1/auth/password/request", { method: "POST", body: { email } }),
-  verifyEmail: (key: string) =>
-    request<unknown>("/_allauth/browser/v1/auth/email/verify", {
-      method: "POST",
-      body: { key },
-      allow401: true,
-    }),
-  resetPassword: (key: string, password: string) =>
-    request<unknown>("/_allauth/browser/v1/auth/password/reset", {
-      method: "POST",
-      body: { key, password },
-      allow401: true,
-    }),
-  googleRedirect: () => {
-    const callback = `${window.location.origin}/auth/callback?next=${encodeURIComponent("/app")}`;
-    const params = new URLSearchParams({ provider: "google", callback_url: callback });
-    return `${API_URL}/_allauth/browser/v1/auth/provider/redirect?${params.toString()}`;
-  },
 };

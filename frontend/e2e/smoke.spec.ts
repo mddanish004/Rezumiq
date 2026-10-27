@@ -16,11 +16,13 @@ test("landing, signup, editor, share, public page, analytics, profile, ATS", asy
     await page.getByRole("link", { name: /start free/i }).first().click();
   }
   await expect(page).toHaveURL(/\/signup/);
-  await page.locator('input[name="name"]').fill("Rohan Kulkarni");
-  await page.locator('input[name="email"]').fill(email);
-  await page.locator('input[name="password"]').fill(password);
-  await page.locator('input[name="confirm"]').fill(password);
-  await page.getByRole("button", { name: /create free account/i }).click();
+  await page.locator('input[name="emailAddress"]').fill(email);
+  await page.getByRole("button", { name: /continue/i }).first().click();
+  await expect(page.locator('input[name="password"]').first()).toBeVisible({ timeout: 20_000 });
+  await page.locator('input[name="password"]').first().fill(password);
+  const confirm = page.locator('input[name="confirmPassword"]');
+  if (await confirm.count()) await confirm.first().fill(password);
+  await page.getByRole("button", { name: /continue/i }).click();
 
   await expect(page).toHaveURL(/\/app/, { timeout: 20_000 });
   await expect(page.getByRole("heading", { name: /welcome back/i })).toBeVisible({ timeout: 20_000 });
@@ -157,7 +159,11 @@ test("landing, signup, editor, share, public page, analytics, profile, ATS", asy
   await publicPage.screenshot({ path: testInfo.outputPath("public-resume.png"), fullPage: true });
 
   const me = await page.evaluate(async () => {
-    const response = await fetch("http://localhost:8000/v1/me", { credentials: "include" });
+    const token = document.cookie.match(/(?:^|;\s*)__session=([^;]+)/)?.[1];
+    const response = await fetch("http://localhost:8000/v1/me", {
+      credentials: "include",
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+    });
     return (await response.json()).data as { username: string };
   });
   await publicPage.goto(`/${me.username}`);

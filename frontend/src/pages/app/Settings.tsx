@@ -269,11 +269,9 @@ export default function Settings() {
             Download a JSON copy of your account, profile, resumes, versions, jobs, share links, and AI
             usage. The export does not include prompts or outputs.
           </p>
-          <a href={api.dataExportUrl()} target="_blank" rel="noreferrer">
-            <Button variant="secondary" size="sm" className="mt-4">
-              <Download size={14} /> Download JSON
-            </Button>
-          </a>
+          <Button variant="secondary" size="sm" className="mt-4" onClick={() => void api.downloadMyData()}>
+            <Download size={14} /> Download JSON
+          </Button>
           <div className="mt-4 flex items-center gap-3 border-t border-line pt-4">
             <Button
               variant="secondary"

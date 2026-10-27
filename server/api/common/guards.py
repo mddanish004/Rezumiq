@@ -22,11 +22,8 @@ def require_auth(view):
 
 
 def email_verified(user) -> bool:
-    """Verified-ness lives in allauth's EmailAddress table, not the user row."""
-    from allauth.account.models import EmailAddress
-
-    address = EmailAddress.objects.filter(user=user, email=user.email).first()
-    return bool(address and address.verified)
+    """Synced from Clerk with every user.* webhook and the first provisioning."""
+    return bool(user.email_verified)
 
 
 def is_admin(user) -> bool:

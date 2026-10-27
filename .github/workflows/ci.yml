@@ -61,7 +61,7 @@ jobs:
         run: python manage.py check --deploy --fail-level ERROR
         env:
           DJANGO_DEBUG: "false"
-          SMTP_HOST: smtp.example.com
+          CLERK_JWKS_URL: https://clerk.example/.well-known/jwks.json
           ALLOWED_HOSTS: api.rezumiq.com
           COOKIE_DOMAIN: .rezumiq.com
       - run: pytest

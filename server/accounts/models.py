@@ -7,9 +7,11 @@ from django.utils import timezone
 class User(AbstractUser):
     """The auth user.
 
-    `email` is the login identity and unique because allauth authenticates by
-    email. Plan is derived from subscriptions (see the billing port), stored on
-    the row after every subscription change, and never the source of truth.
+    Identity is verified by Clerk: `clerk_id` holds the Clerk user id and is
+    set the first time a valid token arrives. `email` stays unique because
+    billing and share links reduce to it. Plan is derived from subscriptions
+    (see the billing port), stored on the row after every subscription change,
+    and never the source of truth.
     """
 
     class Plan(models.TextChoices):
@@ -17,9 +19,12 @@ class User(AbstractUser):
         SEASON_PASS = "season_pass", "Season Pass"
         PRO = "pro", "Pro"
 
+    clerk_id = models.CharField(max_length=64, unique=True, null=True, blank=True)
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=100, blank=True, default="")
     plan = models.CharField(max_length=16, choices=Plan.choices, default=Plan.FREE)
+    email_verified = models.BooleanField(default=False)
+    avatar_url = models.CharField(max_length=512, blank=True, default="")
     is_guest = models.BooleanField(default=False)
     guest_expires_at = models.DateTimeField(null=True, blank=True)
     usage_reset_at = models.DateTimeField(null=True, blank=True)

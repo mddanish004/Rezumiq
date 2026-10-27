@@ -1,3 +1,4 @@
+import logging
 import secrets
 import shutil
 from datetime import timedelta
@@ -6,6 +7,7 @@ from django.conf import settings
 from django.contrib.auth import get_user_model, login
 from django.db import connection
 from django.http import HttpResponse, JsonResponse
+from django.middleware.csrf import get_token
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
@@ -15,13 +17,40 @@ from api.common.guards import require_auth
 from api.common.parse import parse_body
 from api.common.responses import send_data
 
+from . import webhooks
 from .schemas import MeOut, UpdateMeBody, UsernameOut
 from .service import delete_me, export_my_data, update_me, with_admin
 from .usernames import is_username_available
 
+logger = logging.getLogger(__name__)
+
 
 def health(request) -> JsonResponse:
     return JsonResponse({"status": "ok"})
+
+
+def prime_csrf(request) -> JsonResponse:
+    """Sets the csrftoken cookie for cross-domain unsafe API calls; the React app
+    calls this once at boot."""
+    get_token(request)
+    return JsonResponse({"ok": True})
+
+
+@require_POST
+@csrf_exempt
+def clerk_webhook(request) -> JsonResponse:
+    """Receives user.created/updated/deleted from Clerk to mirror account
+    changes (email, name, avatar, deletion) into the local user row."""
+    try:
+        event = webhooks.verify_request(request.body, request.headers)
+        webhooks.apply_event(event)
+    except Exception:
+        logger.exception("Rejected Clerk webhook")
+        return JsonResponse(
+            {"error": {"code": "UNAUTHORIZED", "message": "Invalid webhook", "details": None}},
+            status=400,
+        )
+    return JsonResponse({"ok": True})
 
 
 def health_deep(request) -> JsonResponse:

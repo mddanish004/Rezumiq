@@ -164,15 +164,15 @@ def get_overview(days: int, time_zone: str) -> dict:
     )
     plans = [{"label": row["plan"], "count": row["count"]} for row in plan_rows]
 
-    from allauth.socialaccount.models import SocialAccount
-
-    provider_rows = (
-        SocialAccount.objects.filter(user__is_guest=False)
-        .values("provider")
-        .annotate(count=Count("user_id", distinct=True))
-        .order_by("-count")
-    )
-    providers = [{"label": row["provider"], "count": row["count"]} for row in provider_rows]
+    providers = [
+        {
+            "label": "clerk",
+            "count": users()
+            .objects.filter(is_guest=False, clerk_id__isnull=False)
+            .distinct()
+            .count(),
+        }
+    ]
 
     funnel_ids = list(
         users().objects.filter(is_guest=False, date_joined__gte=since).values_list("id", flat=True)
@@ -203,7 +203,7 @@ def get_overview(days: int, time_zone: str) -> dict:
             "image": None,
             "plan": user.plan,
             "createdAt": user.date_joined,
-            "providers": list(user.socialaccount_set.values_list("provider", flat=True)),
+            "providers": ["clerk"] if user.clerk_id else [],
         }
         for user in users().objects.filter(is_guest=False).order_by("-date_joined")[:8]
     ]
@@ -284,7 +284,7 @@ def list_users(query: dict) -> dict:
             "suspendedAt": user.suspended_at,
             "createdAt": user.date_joined,
             "lastActiveAt": last_active.get(str(user.id)),
-            "providers": list(user.socialaccount_set.values_list("provider", flat=True)),
+            "providers": ["clerk"] if user.clerk_id else [],
             "resumes": Resume.objects.filter(user=user, deleted_at__isnull=True).count(),
             "aiRuns": AiRun.objects.filter(user=user).count(),
         }
@@ -294,9 +294,7 @@ def list_users(query: dict) -> dict:
 
 
 def _email_verified(user) -> bool:
-    from allauth.account.models import EmailAddress
-
-    return EmailAddress.objects.filter(user=user, email=user.email, verified=True).exists()
+    return user.email_verified
 
 
 def get_user_detail(user_id) -> dict:
@@ -402,10 +400,9 @@ def get_user_detail(user_id) -> dict:
             "createdAt": user.date_joined,
             "updatedAt": user.date_joined,
         },
-        "accounts": [
-            {"providerId": account.provider, "createdAt": account.date_joined}
-            for account in user.socialaccount_set.all()
-        ],
+        "accounts": (
+            [{"providerId": "clerk", "createdAt": user.date_joined}] if user.clerk_id else []
+        ),
         "resumes": user_resumes,
         "ai": {
             "runs": ai_totals["runs"],

@@ -6,8 +6,6 @@ from api.common.errors import internal_error, not_found
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("accounts/", include("allauth.urls")),
-    path("_allauth/", include("allauth.headless.urls")),
     path("auth/guest", views.guest_login, name="guest-login"),
     path("health", views.health, name="health"),
     path("health/deep", views.health_deep, name="health-deep"),

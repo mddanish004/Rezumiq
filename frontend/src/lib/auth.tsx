@@ -1,14 +1,13 @@
-import { createContext, useContext, type ReactNode } from "react";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { createContext, useContext, useEffect, type ReactNode } from "react";
+import { useAuth as useClerkAuth } from "@clerk/clerk-react";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Navigate, useLocation } from "react-router-dom";
-import { api, ApiError, type Me } from "./api";
+import { api, ApiError, primeCsrf, setTokenGetter, type Me } from "./api";
 import { Spinner } from "@/components/ui/Spinner";
 
 type AuthContextValue = {
   user: Me | null;
   loading: boolean;
-  login: (email: string, password: string) => Promise<void>;
-  signup: (email: string, password: string, name?: string) => Promise<void>;
   logout: () => Promise<void>;
 };
 
@@ -16,8 +15,18 @@ const AuthContext = createContext<AuthContextValue | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const queryClient = useQueryClient();
+  const { isLoaded, isSignedIn, getToken, signOut } = useClerkAuth();
+
+  useEffect(() => {
+    setTokenGetter(getToken);
+  }, [getToken]);
+
+  useEffect(() => {
+    void primeCsrf();
+  }, []);
+
   const meQuery = useQuery<Me | null>({
-    queryKey: ["me"],
+    queryKey: ["me", isSignedIn],
     queryFn: async () => {
       try {
         return await api.me();
@@ -26,30 +35,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         throw error;
       }
     },
+    enabled: isLoaded,
     retry: false,
     staleTime: 60_000,
   });
 
-  const loginMutation = useMutation({
-    mutationFn: ({ email, password }: { email: string; password: string }) => api.login(email, password),
-    onSuccess: async () => {
-      await queryClient.invalidateQueries({ queryKey: ["me"] });
-    },
-  });
-
-  const signupMutation = useMutation({
-    mutationFn: async ({ email, password, name }: { email: string; password: string; name?: string }) => {
-      await api.signup(email, password);
-      if (name?.trim()) await api.updateMe({ name: name.trim() });
-    },
-    onSuccess: async () => {
-      await queryClient.invalidateQueries({ queryKey: ["me"] });
-    },
-  });
-
   const logout = async () => {
-    await api.logout();
-    queryClient.setQueryData(["me"], null);
+    await signOut();
     queryClient.clear();
   };
 
@@ -57,13 +49,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     <AuthContext.Provider
       value={{
         user: meQuery.data ?? null,
-        loading: meQuery.isLoading,
-        login: async (email, password) => {
-          await loginMutation.mutateAsync({ email, password });
-        },
-        signup: async (email, password, name) => {
-          await signupMutation.mutateAsync({ email, password, name });
-        },
+        loading: !isLoaded || (!!isSignedIn && meQuery.isLoading),
         logout,
       }}
     >
@@ -88,7 +74,8 @@ export function ProtectedRoute({ children }: { children: ReactNode }) {
       </div>
     );
   }
-  if (!user) return <Navigate to="/login" state={{ from: location.pathname }} replace />;
+  if (!user)
+    return <Navigate to="/login" state={{ from: location.pathname }} replace />;
   return <>{children}</>;
 }
 

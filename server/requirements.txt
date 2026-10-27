@@ -1,5 +1,4 @@
 Django>=5.2,<5.3
-django-allauth[socialaccount,headless]>=65.14,<66
 django-cors-headers>=4.6,<5
 dj-database-url>=3,<4
 psycopg[binary]>=3.2,<4
@@ -7,6 +6,7 @@ gunicorn>=23,<24
 whitenoise>=6.9,<7
 python-dotenv>=1,<2
 pydantic[email]>=2.11,<3
+pyjwt[crypto]>=2.10,<3
 boto3>=1.35,<2
 pypdf>=4.3,<6
 pdfminer.six>=20250506

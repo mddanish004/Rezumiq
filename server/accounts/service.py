@@ -37,13 +37,8 @@ def with_admin(user) -> dict:
 
 
 def user_image(user) -> str | None:
-    """The avatar carries over from the Google account if there is one; guests
-    and password accounts have none."""
-    accounts = user.socialaccount_set.filter(provider="google")
-    account = accounts.first()
-    if account:
-        return (account.extra_data or {}).get("picture")
-    return None
+    """The avatar is mirrored from Clerk; guests and unset names have none."""
+    return user.avatar_url or None
 
 
 @transaction.atomic

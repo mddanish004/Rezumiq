@@ -91,11 +91,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sites",
     "corsheaders",
-    "allauth",
-    "allauth.account",
-    "allauth.socialaccount",
-    "allauth.headless",
-    "allauth.socialaccount.providers.google",
     "accounts",
     "resumes",
     "uploads",
@@ -115,10 +110,10 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "accounts.middleware.ClerkAuthMiddleware",
     "accounts.middleware.SuspendUserMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "allauth.account.middleware.AccountMiddleware",
     "api.common.errors.JsonErrorMiddleware",
 ]
 
@@ -141,48 +136,16 @@ ROOT_URLCONF = "rezumiq.urls"
 WSGI_APPLICATION = "rezumiq.wsgi.application"
 
 AUTH_USER_MODEL = "accounts.User"
-AUTHENTICATION_BACKENDS = [
-    "django.contrib.auth.backends.ModelBackend",
-    "allauth.account.auth_backends.AuthenticationBackend",
-]
+AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend"]
 
 FRONTEND_URL = (os.getenv("FRONTEND_URL") or "http://localhost:5173").rstrip("/")
-HEADLESS_ONLY = True
-HEADLESS_FRONTEND_URLS = {
-    "account_confirm_email": f"{FRONTEND_URL}/account/verify-email/{{key}}",
-    "account_reset_password": f"{FRONTEND_URL}/forgot-password",
-    "account_reset_password_from_key": f"{FRONTEND_URL}/account/password/key/{{key}}",
-    "account_login": f"{FRONTEND_URL}/login",
-    "account_signup": f"{FRONTEND_URL}/signup",
-    "socialaccount_login_error": f"{FRONTEND_URL}/login?error=provider",
-}
-ACCOUNT_LOGIN_METHODS = {"email"}
-ACCOUNT_SIGNUP_FIELDS = ["email*", "password1*", "password2*"]
-ACCOUNT_EMAIL_UNIQUE = True
-ACCOUNT_EMAIL_VERIFICATION = "optional"
-ACCOUNT_LOGOUT_ON_GET = True
-ACCOUNT_RATE_LIMITS = {
-    "login": "30/m/ip",
-    "login_failed": "10/m/ip,5/300s/key",
-    "signup": "20/m/ip",
-    "reset_password": "20/m/ip,5/m/key",
-    "reset_password_from_key": "20/m/ip",
-}
 SITE_ID = 1
 
-google_client_id = os.getenv("GOOGLE_CLIENT_ID", "")
-google_client_secret = os.getenv("GOOGLE_CLIENT_SECRET", "")
-SOCIALACCOUNT_PROVIDERS = {
-    "google": {
-        "APP": {
-            "client_id": google_client_id,
-            "secret": google_client_secret,
-            "key": "",
-        },
-        "SCOPE": ["profile", "email"],
-        "AUTH_PARAMS": {"access_type": "online"},
-    }
-}
+CLERK_JWKS_URL = os.getenv("CLERK_JWKS_URL") or None
+CLERK_SECRET_KEY = os.getenv("CLERK_SECRET_KEY") or None
+CLERK_WEBHOOK_SECRET = os.getenv("CLERK_WEBHOOK_SECRET") or None
+if not CLERK_JWKS_URL and not DEBUG:
+    raise ImproperlyConfigured("CLERK_JWKS_URL is required when DJANGO_DEBUG is false")
 
 ADMIN_EMAILS = env_list("ADMIN_EMAILS")
 
@@ -246,19 +209,6 @@ STORAGES = {
         ),
     },
 }
-
-DEFAULT_FROM_EMAIL = os.getenv("EMAIL_FROM", "Rezumiq <no-reply@rezumiq.com>")
-if os.getenv("SMTP_HOST"):
-    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-    EMAIL_HOST = os.environ["SMTP_HOST"]
-    EMAIL_PORT = env_int("SMTP_PORT", 587)
-    EMAIL_HOST_USER = os.getenv("SMTP_USER", "")
-    EMAIL_HOST_PASSWORD = os.getenv("SMTP_PASSWORD", "")
-    EMAIL_USE_TLS = os.getenv("SMTP_TLS", "true") != "false"
-elif DEBUG:
-    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-else:
-    raise ImproperlyConfigured("SMTP_HOST is required when DJANGO_DEBUG is false")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 

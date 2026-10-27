@@ -10,10 +10,6 @@ const Legal = lazy(() => import("./pages/Legal"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Login = lazy(() => import("./pages/auth/Login"));
 const Signup = lazy(() => import("./pages/auth/Signup"));
-const ForgotPassword = lazy(() => import("./pages/auth/ForgotPassword"));
-const ResetPassword = lazy(() => import("./pages/auth/ResetPassword"));
-const VerifyEmail = lazy(() => import("./pages/auth/VerifyEmail"));
-const AuthCallback = lazy(() => import("./pages/auth/AuthCallback"));
 const Dashboard = lazy(() => import("./pages/app/Dashboard"));
 const Resumes = lazy(() => import("./pages/app/Resumes"));
 const Jobs = lazy(() => import("./pages/app/Jobs"));
@@ -44,10 +40,6 @@ export default function App() {
       <Route path="/legal/:page" element={<Legal />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/forgot-password" element={<ForgotPassword />} />
-      <Route path="/account/verify-email/:key" element={<VerifyEmail />} />
-      <Route path="/account/password/key/:key" element={<ResetPassword />} />
-      <Route path="/auth/callback" element={<AuthCallback />} />
 
       <Route
         path="/app"
